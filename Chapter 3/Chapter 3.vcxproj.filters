@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Exercises">
+      <UniqueIdentifier>{abb87cc9-f91d-47ba-a648-95e5c714b883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Answers">
+      <UniqueIdentifier>{f9f63ddc-7205-43e8-b545-849757daaae0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Answers\Q1">
+      <UniqueIdentifier>{660922b9-d921-41b4-a89c-2ff2f5dd0bfb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Chapter 3 Review.txt" />
+    <Text Include="Chapter 3 Terms.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Drill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="P81 Try This.cpp">
+      <Filter>Exercises\Answers\Q1</Filter>
+    </ClCompile>
+    <ClCompile Include="P65 Try This.cpp">
+      <Filter>Exercises\Answers\Q1</Filter>
+    </ClCompile>
+    <ClCompile Include="P69 Try This.cpp">
+      <Filter>Exercises\Answers\Q1</Filter>
+    </ClCompile>
+    <ClCompile Include="P73 Try This.cpp">
+      <Filter>Exercises\Answers\Q1</Filter>
+    </ClCompile>
+    <ClCompile Include="P75 Try This.cpp">
+      <Filter>Exercises\Answers\Q1</Filter>
+    </ClCompile>
+    <ClCompile Include="Q2.cpp">
+      <Filter>Exercises\Answers</Filter>
+    </ClCompile>
+    <ClCompile Include="Q3.cpp">
+      <Filter>Exercises\Answers</Filter>
+    </ClCompile>
+    <ClCompile Include="Q4.cpp">
+      <Filter>Exercises\Answers</Filter>
+    </ClCompile>
+    <ClCompile Include="Q5.cpp">
+      <Filter>Exercises\Answers</Filter>
+    </ClCompile>
+    <ClCompile Include="Q6.cpp">
+      <Filter>Exercises\Answers</Filter>
+    </ClCompile>
+    <ClCompile Include="Q7.cpp">
+      <Filter>Exercises\Answers</Filter>
+    </ClCompile>
+    <ClCompile Include="Q8.cpp">
+      <Filter>Exercises\Answers</Filter>
+    </ClCompile>
+    <ClCompile Include="Q9.cpp">
+      <Filter>Exercises\Answers</Filter>
+    </ClCompile>
+    <ClCompile Include="Q10.cpp">
+      <Filter>Exercises\Answers</Filter>
+    </ClCompile>
+    <ClCompile Include="Q11.cpp">
+      <Filter>Exercises\Answers</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

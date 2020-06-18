@@ -1,0 +1,106 @@
+Chapter 3 Review Questions and Answers
+
+1	What is meant by the term Prompt?
+	A prompt is when the program requires action from the user, such as a request for input.
+
+2	Which operator do you use to read into an integer?
+	>>
+
+3	If you want the user to input an integer value into your program for a variable named number,
+	what are two lines of code you could write to ask the user to do it and to input the value into
+	your program?
+
+	int number;
+	cout >> "Please enter a number";
+	cin <<  number;
+
+4	What is \n called and what purpose does it serve?
+	\n is an escape character and represents a computer command such as newline or tab. In string
+	input it ends the string.
+
+5	What terminates input into a string?
+	A whitespace character(space, newline, or tab).
+
+6	What terminates input into an integer?
+	Integer input is terminated upon encountering non-integer input after at least a single integer. 
+
+7	How would you write the following:
+
+	cout<<"Hello, ";
+	cout<<first_name;
+	cout<<"!\n";
+
+	As a single line of code?
+	cout<<"Hello, " << first_name << "!\n";
+
+8	What is an object?
+	An object is a place in the computer's memory with a specified type that determines what kind
+	of information can be placed in it.
+
+9	What is a literal?
+	A literal is notion representing a fundamental data value, i.e. the number 12, the letter 'e', etc.
+
+10	What kinds of literals are there?
+	Many different kinds, but the most prevalent are ints, floats(double), chars, strings, and bools.
+
+11	What is a variable?
+	A variable is a named object of a specified type.
+
+12	What are typical sizes for a char, an int, and a double?
+	char	-	1 byte
+	int		-	4 bytes
+	double	-	8 bytes
+
+13	What measures do we use for the size of small entities in memory, such as ints and strings?
+	Bytes, which represent 8 bits, with a bit being a single binary digit.
+
+14	What is the difference between "=" and "=="?
+	= is an assignment operator, which overwrites the value held by a variable with the new value.
+	== is equivalence, which tests if two variables are equal and returns a boolean value.
+
+15	What is a definition?
+	A definition is a statement that introduces a new name to the program, assigns it a type, and
+	allocates memory for it. It should also provide an initial value but this is not a strict
+	requirement.
+
+16	What is an intialization and how does it differ from an assignment?
+	Initialization takes place when a variable is first declared with a value, therefore no previous 
+	value is overwritten. Assignment assigns a new value to a previously initialized variable.
+
+17	What is string concatenation and how do you make it work in C++?
+	String concatenation is the merging of two strings. It is done using the + operator as follows:
+	"string_a" + "string_b" = "string_astring_b"
+
+18	Which of the following are legal names in C++? If it is not legal, why not?
+	
+	This_little_pig		Legal
+	this_1_is_fine		Legal
+	2_For_1_special		Illegal - Starts with a number.
+	latest thing		Illegal - Uses a space.
+	the_S12_method		Legal
+	_this_is_ok			Legal but undesirable due to starting with a _.
+	MiniMineMine		Legal but dumb
+	number				Legal but vague
+	correct!			Illegal - Invalid symbol('!')
+
+19	Give five examples of legal names that you should not use because they may cause confusion.
+	Examples include names that are extremely vague, easily confused, or mild variations on keywords
+	i.e. Int, _Const, forloop, hell0, Main.
+
+20	What are some good rules for choosing names?
+	A good name should be short, descriptive, rememberable, and unique for the scope of its usage.
+
+21	What is type safety and why is it important?
+	Type safety is the usage of an object by the rules that govern its type. It is critical to good
+	programming because it ensures that the program will run correctly and not lose or mis-translate
+	data. For instance, if a integer is used where the program is expecting a string, this is an example
+	of a failure of type safety and will usually lead to a crash.
+
+22	Why can conversion from double to int be a bad thing?
+	A double is twice the size of an integer. To make this conversion fit, the integer truncates the 
+	decimal value of a double entirely which can lead to what is called Fraction Loss. 
+	For example, a value of 4.9999 will be converted to an int 4, not 5.
+
+23	Define a rule to help decide if a conversion from one type to another is safe or unsafe.
+	If the type being converted to is smaller than the type it is coming from, it is unsafe. When
+	in doubt, use the {} operators to have the compiler check for narrowing.

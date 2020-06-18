@@ -1,0 +1,58 @@
+Chapter 2 Terms
+
+Assignment
+	Assignment refers to giving a variable a new value, usually through the '=' operator.
+
+cin
+	Console-In, a function which reads input from the user into the console.
+
+Concatenation
+	Combining two strings into a single string, normally by the + operator.
+
+Conversion
+	Translating a data object from one type into another.
+
+Declaration
+	The specification of a name and its type within a program.
+
+Decrement
+	To decrease by 1, normally using the "--" operator.
+
+Definition
+	A specification that declares an entity and provides all the details required by a program using 
+	said entity. 
+
+	A more succinct definition: A declaration that allocates memory.
+
+Increment
+	To increase by 1, normally by the ++ operator.
+
+Initialization
+	The specification of a variable and its type with an initial meaningful value.
+
+Name
+	The identifier by which a variable may be referenced by a program.
+
+Narrowing
+	A type of conversion where the parent object type may be too large for the target object type.
+
+Object
+	An area of memory with a set type that determines what kind of information can be placed in it.
+
+Operation
+	Something that performs an action in a program, such as an operator or a function.
+
+Operator
+	Notion that represents an operation on a variable.
+
+Type
+	Something which defines a set of possible values and applicable operations an object may have.
+
+Type Safety
+	The use of objects in accordance to the rules for their type.
+
+Value
+	Data which is held by a variable.
+
+Variable
+	A named object of a specified type.

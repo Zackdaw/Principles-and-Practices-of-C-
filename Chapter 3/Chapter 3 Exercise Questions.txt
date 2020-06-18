@@ -1,0 +1,15 @@
+Chapter 3 Exercises
+
+1.	Do all the Try This exercises from Chapter 3.
+		See the exercises folder for these.
+
+2.	Write a program in C++ that converts from miles to kilometers. Your program should have a 
+	reasonable prompt for the user to enter a number of miles. Hint: There are 1.609 kilometers 
+	per a mile.
+
+3.	Write a program that does nothing but declares a number of variables with legal and illegal names
+	to see how the compiler reacts.
+
+4.  Write a program that prompts the user to enter two integer values. Store these values in int 
+	variables named val1 and val2. Write your program to determine the smaller, larger, sum,
+	difference, product, and ratio of the balues and report them to the user.
