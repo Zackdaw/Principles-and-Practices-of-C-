@@ -36,5 +36,8 @@
     <ClCompile Include="P125.cpp">
       <Filter>Try This Exercises</Filter>
     </ClCompile>
+    <ClCompile Include="Chapter 4 Drill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
