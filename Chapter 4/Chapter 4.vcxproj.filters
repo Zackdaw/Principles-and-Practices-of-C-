@@ -16,6 +16,9 @@
     <Filter Include="Try This Exercises">
       <UniqueIdentifier>{c981ecbc-4284-47bd-ad54-ecf1bf7515de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises">
+      <UniqueIdentifier>{28ace363-d29b-47db-ba4b-5d867bd4df33}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="P105.cpp">
@@ -39,5 +42,53 @@
     <ClCompile Include="Chapter 4 Drill.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Q1.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q2.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q3.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q4.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q5.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q6.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q7.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q8.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q9.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q10.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q11.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q12.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q13.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Chapter 4 Review.txt" />
+    <Text Include="Chapter 4 Terms.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Q2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

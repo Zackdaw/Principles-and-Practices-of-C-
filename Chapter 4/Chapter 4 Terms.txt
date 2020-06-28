@@ -1,0 +1,96 @@
+Chapter 4 Terms
+
+Abstraction
+The hiding of details that are not immediately necessary to use a facility behind a more convenient
+interface.
+
+Computation
+The act of producing outputs based on inputs.
+
+Conditional Element
+An operator that returns the state of a condition as a bool. 
+
+Declaration
+The specification of a name and its type within a program.
+
+Definition
+A declaration that also includes implementation details.
+
+Divide and Conquer
+Splitting larger computations into smaller, more readily doable and understandable computations.
+
+else
+A conditional statement that is run if an if-statement is found to be false.
+
+Expression
+A basic building block of programs. An expression computes a value(output) from a number of operands(inputs).
+
+For-statement
+An iteration-statement that runs while a condition is true and can increment that condition 
+each loop, eventually leading it to be false. Useful for iterating through a vector or array.
+
+Range-for-statement
+A shorthand way of looping through an entire vector.
+
+Function
+A function is a named sequence of statements.
+
+if-statement
+A conditional statement that executes if the condition is met.
+
+Increment
+To increase by one.
+
+Input
+Values used by a computation.
+
+Iteration
+The act of repeatedly executing a piece of code.
+
+loop
+A piece of code executed repeatedly, typically in a while-statement or for-statement.
+
+lvalue
+The left operand of an operation.
+
+Member Function
+A function that is declared as a member of a class, and subsequently may be accessed by
+instance_name.member_function_name(parameters) notation.
+
+output
+Data that is produced by a computation.
+
+push_back()
+A member function of the vector class that creates a new entry at the end of a vector and assigns it
+the parameter value in parenthesis.
+
+repetition
+Repeating the same peice of code.
+
+rvalue
+The right operand of an operator.
+
+Selection
+Statements such as if-statements or else-statements that select a peice of code to run based on a 
+conditional element.
+
+size()
+A member function of the vector class that returns the size of a vector.
+
+sort()
+A member fuction of a vector class that sorts the vector based on a provided parameter.
+
+statement
+A basic element of a program that controls execution flow in a function, such as if-statements,
+for-statements, or switch-statements, etc.
+
+switch-statement
+A statement which executes a peice of code based on a constant value provided which in term is
+defined by it's case.
+
+vector 
+A container which represents a mutable array.
+
+while-statement
+A statement which repeats its relevant code for as long as the conditional element is true and
+does not necessarily provide a mechanism to eventually make the conditional element false.

@@ -1,4 +1,4 @@
-Chapter 2 Terms
+Chapter 3 Terms
 
 Assignment
 	Assignment refers to giving a variable a new value, usually through the '=' operator.

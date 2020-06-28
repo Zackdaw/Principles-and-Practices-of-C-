@@ -1,0 +1,125 @@
+01.	What is a computation?
+		The act of producing outputs based on inputs.
+
+02.	What do we mean by the inputs and outputs to a computation? Give examples.
+		Input is data going into a computation. It can come from any source, ranging from other programs
+		to physical input devices such as mice, keyboards, or signals.
+		
+		Output is the product of a computation's manipulation of input and can be directed at a plethora
+		of sources ranging from screens to hard drive or even other computations.
+
+03.	What are the three requirements a programmer should keep in mind when expressing computations?
+		A computation must be expressed:
+			+Correctly
+			+Simply
+			+Efficiently
+		It is imperative that these be followed in order. An incorrect computation is worthless 
+		regardless of its efficiency, and a working, readily interpretable computation is often 
+		more usable in the end than an efficient, complex solution. 
+
+04.	What does an expression do?
+		An expression computes a value from a number of operands.
+
+05.	What is the difference between a statement and an expression as described in this chapter?
+		An expression is a series of operands that are acted upon by an operator to produce a value.
+			i.e. 4 x 5, 2 + 4, "Hello" + " " + "World".
+
+		A statement is an action that may be interpreted by a computer and is terminated by ';' or 
+		enclosed in braces. 
+			i.e. int x; vector<string> sentence(3) = {"Hello", " ", "World"}
+
+06.	What is an lvalue? List the operators that require an lvalue. Why do these values, and not others,
+	require an lvalue?
+		An lvalue is a left-sided operand. Operators such as '=', 'oper=', and "++" or "--" require lvalues.
+		These are needed because those operators refer to the object on the left side being operated on by
+		the operand with the input of the rvalue, which is occasionally implicit such as in -- or ++'s case.
+
+07.	What is a constant expression?
+		An expression with an integer value consisting entirely of constants.
+
+08.	What is a literal?
+	A literal is notion representing a fundamental data value, i.e. the number 12, the letter 'e', etc.
+
+09.	What is a symbolic constant and why do we use them?
+	A symbolic constant is a named object which cannot be reassigned after compilation. It is used
+	to create a single name reference to a permanent object so it does not have to be fully retyped 
+	every time it is used, and also so it may be changed easily in just a single field as opposed
+	to throughout the program.
+
+10.	What is a magic constant? Give examples. 
+		Magic constants, also known as magic numbers, are literals directly placed into expressions
+		where they could be readily replaced by more easily maintainable symbolic constants. A good
+		example is a mathematical constant like Pi could easily be represented by a symbolic 
+		constexpr double Pi = 3.14; instead of typing 3.14 every time it is needed. 
+
+11.	What are some operators that we can use for integers and floating point values?
+		Mathematical and logical operators as well as input/output operators.
+
+12.	What operators can be use on integers but not on floating point values? 
+		Neither modulo(%) nor bitwise operators can be used on floats.
+
+13.	What are some operators that can be used on strings?
+		Concatenation(+), logical operators, assignment, input/output.
+
+14.	When would a programmer prefer a switch-statement over an if-statement?
+		A switch-statement is preferrable to an if-statement in the event that you have multiple 
+		branches of a decision point that are determined by a variable with only constant values. 
+
+15. What are some common problems with switch-statements?
+		The most common problem is the archaic structure. It can easily suffer from a forgotten "break"
+		statement which can lead it to executing multiple cases. It can also be difficult to maintain
+		if the list of cases should grow significantly or if multiple conditions should arise. Furthermore
+		if the case value is not a constant, i.e. a string, you cannot easily use them.
+
+16.	What is the function of each part of the header line in a for-loop? In what sequence are they executed?
+		for (int i = 0; i < LENGTH; i++)
+		The first part initializes a variable to count, which is called I, the second is a logic check
+		on if the counting variable is lower than the designated variable, and the final statement
+		is instructions on what to do if the second statement returns as true.
+
+17.	When should the for-loop be used and when should the while-loop be used?
+		A while-loop should be utilized when initializing and incrementing a variable at the loop
+		declaration is not possible, or when the loop must go on for an indefinite amount of time
+		until some condition is met.
+
+18.	How do you print the numeric value of a char? 
+		Cast the char to an int using int(char)
+
+19.	Describe what the line char foo(int x) means in an expression declaration.
+		It means the expression named foo will return a char and require an int parameter, which it
+		will call x.
+
+20.	When should you define a separate function for part of a program? List reasons.
+		You should define a separate function to create abstraction and to divide and conquer larger
+		computational challenges. The use of functions will make the program more logically separate,
+		make the program more readable, and make both testing and code re-use more practical.
+
+21.	What can you do to an int that you cannot do to a string?
+		Mathematical operations, use it as a case in a switch.
+
+22.	What can you do to a string that you cannot do to an int?
+		Concatenation.
+
+23.	What is the index of the third element of a vector?
+		2
+
+24.	How do you write a for-loop that prints every element of a vector?
+		for (type x : vector name){ cout >> x >> '/n';}
+
+25.	What does vector<char>alphabet(26); do?
+		It creates a vector of 26 chars named alphabet.
+
+26.	Describe what push_back() does to a vector.
+		push_back creates a new entry at the end of the vector and assigns it the parameter's value. 
+
+27.	What does vector's member size() do?
+		Returns the size of a vector.
+
+28.	What makes vectors so popular and useful?
+		Vectors are popular and useful because they are a way of easily storing the same type of
+		value in sequence. Additionally, the sequence knows its own size and may be readily added
+		to and removed from, unlike arrays which require more outside infrastructure for such 
+		functions.
+
+29.	How do you sort the elements of a vector?
+		sort(vector name);
