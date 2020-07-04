@@ -13,37 +13,16 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Try This Exercises">
-      <UniqueIdentifier>{c981ecbc-4284-47bd-ad54-ecf1bf7515de}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Exercises">
-      <UniqueIdentifier>{28ace363-d29b-47db-ba4b-5d867bd4df33}</UniqueIdentifier>
+      <UniqueIdentifier>{1223440f-5031-44db-98bc-43df8ec41790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Try This Exercises">
+      <UniqueIdentifier>{537bb00f-4842-4319-975a-2a96e6d3c392}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="P105.cpp">
-      <Filter>Try This Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="P109.cpp">
-      <Filter>Try This Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="P111.cpp">
-      <Filter>Try This Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="P113.cpp">
-      <Filter>Try This Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="P116.cpp">
-      <Filter>Try This Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="P125.cpp">
-      <Filter>Try This Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter 4 Drill.cpp">
+    <ClCompile Include="Chapter 5 Drill.cpp">
       <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Q1.cpp">
-      <Filter>Exercises</Filter>
     </ClCompile>
     <ClCompile Include="Q2.cpp">
       <Filter>Exercises</Filter>
@@ -78,35 +57,14 @@
     <ClCompile Include="Q12.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
-    <ClCompile Include="Q13.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="Q14.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="Q15.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="Q16.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="Q17.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="Q18.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
-    <ClCompile Include="Q19.cpp">
-      <Filter>Exercises</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="Chapter 4 Review.txt" />
-    <Text Include="Chapter 4 Terms.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Q2.h">
+    <ClInclude Include="Chapter 5 Drill.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Chapter 5 Review.txt" />
+    <Text Include="Chapter 5 Terms.txt" />
   </ItemGroup>
 </Project>

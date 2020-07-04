@@ -1,0 +1,64 @@
+Argument Error
+An error that arises from a function being provided with an argument that it does not know how to handle.
+
+Assertion
+A statement inserted into a program to state that something must always be true at that point in a program.
+
+catch
+A keyword that denotes the event reciever that "catches" and handles a specified exception.
+
+Compile-Time Error
+An error that is caught by the compiler during compilation. Normally a syntax error or other violation of basic language
+rules.
+
+Container
+An object that holds other objects, aka elements, such as a vector or an array.
+
+Debugging
+The act of searching for and removing errors from a program in a less systematic way than testing.
+
+Error
+A mismatch between what a program is expected to do and what the program actually does.
+
+Exception
+A programmed response to exceptional circumstances or events, such as errors or unplanned inputs. It allows the
+separation of error handling from proper code.
+
+Invariant
+Something that must always be true at a given point in the program, such as conditions for entering a loop.
+
+Link-Time Error
+An error that is caught by the linker during linking. Link-Time errors normally deal with mismatches between translation
+units, such as undefined declarations.
+
+Logic Error
+An error that occurs when the fundamental solution coded by the programmer does not correctly solve the intended issue,
+either through poor understanding of the problem or incorrect logic.
+
+Post-Condition
+A condition that must be held upon exiting a block of code.
+
+Pre-Condition
+A condition that must be held upon entering a block of code.
+
+Range Error
+An error that occurs when an index in a sequence is beyond the capacity of the sequence, i.e. v[5] in a vector<int>v(4)
+
+Requirement
+The description of the desired behavior from a program or peice of code. Additionally it may describe the assumptions
+a function or template makes upon its arguments.
+
+Run-Time Error
+An error that occurs when a program is running as an executable.
+
+Syntax Error
+An error that occurs when mistakes in code lead to meaningless code that cannot be interpreted by the compiler.
+
+Testing
+The systemic searching for bugs in a program.
+
+throw
+A keyword used to create an exception upon the detection of specified errors or unplanned behaviors.
+
+Type Error
+An error that arises from a mismatch between types of data that cannot be implicitly converted.

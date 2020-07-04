@@ -10,7 +10,6 @@ int main()
 	cout << "Please enter a max number for the prime calculation: ";
 	cin >> max;
 
-
 	for (int i = 3; i < max; i++)
 	{
 		isPrime = true;
@@ -34,7 +33,6 @@ int main()
 	{
 		cout << prime << '\n';
 	}
-
 
 	return 0;
 }

@@ -1,0 +1,152 @@
+01.	Name the four major types of errors and briefly define each one.
+
+	A.	Compile-Time Errors	-	Errors that are caught by the compiler and prevent the code from being compiled. 
+								These errors are normally a violation of basic language syntax.
+	B.	Link-Time Errors	-	Errors that are caught by the linker when it is combining object files into executables.
+								Link-Time errors are illustrated by undefined declarations.
+	C.	Run-Time Errors		-	Errors that occur when the program is running and are caught by the user's code, 
+								hardware, or internal library check routines. Normally these errors occur when unexpected
+								input or output occurs, such as type errors or null references.
+	D.	Logic Errors		-	The computer and code are executing correctly, however the solution itself is not correct.
+								These errors normally stem from a poor understanding of the solution on the programmer's 
+								behalf, or from incorrectly stating the problem being solved.
+
+02.	What kinds of errors can we ignore in a student program?
+		We can safely ignore errors that arise from hardware issues or from outside software incompatabilities. Additionally.
+		we can assume that the program is allowed to exit upon finding an error.
+
+03.	What guarantees should every completed project offer?
+		A project shall guarantee that it produces correct outputs from legal inputs and shall give reasonable error
+		messages or corrective approaches for illegal input. 
+
+04. List three approaches we can take to eliminate errors in programs and produce acceptable software.
+		A program may combine the following three approaches:
+			A. Organize the code base and final software to minimize errors.
+			B. Test and Debug to assue that most errors are caught before deployment.
+			C. Minimize remaining errors to make sure they are not serious.
+
+05.	Why do we hate debugging?
+		Debugging ultimately represents going back and correcting our mistakes, which could have been minimized and or
+		in many cases prevented entirely by better understanding the language medium or the solution we are attempting
+		to implement.
+
+06.	What is a syntax error? Provide an example.
+		A syntax error is a basic violation of language rules. For instances, int double x: is a syntax violation due
+		to it declaring two types before the identifier and not ending with a proper semicolon.
+
+07.	What is a type error? Provide an example.
+		A type error is an error that arises when the specified type with the given number of arguments does not exist.
+		For example, calling Area(1, 2, 3, 2) would be a type error if the only function that existed was Area(x, y).
+
+08.	What is a linker error? Provide an example.
+		A linker-error occurs when the linker is not able to link the translation units into an executable. For example,
+		if you declare a function that is not defined in any translation unit then a linker-error will occur.
+
+09.	What is a logic error? Provide an example.
+		A logic-error is just a flat-out mistake on the programmer's part in implementing the solution. The computer is 
+		working correctly, but the algorithm provided doesn't provide the correct output for the input. For instance, 
+		a program that does 4 + 2/2 + 1 would provide 6, whereas the intended result was 2 and the logic error is not
+		entering (4+2)/(2+1) and is ultimately a misunderstanding of order of operations.
+
+10.	List four potential sources for program errors discussed in the text.
+		There are many different potential sources, including:
+			A.	Poor specifications. If the program does not have a specific output/goal, it can be difficult to produce
+				said output.
+			B.	Unexpected Inputs. A function or program getting unanticipated input from a source can lead to 
+				undefined behaviors.
+			C.	Unexpected Arguments. A function being called with arguments that it isn't programmed to handle, undefined
+				behavior and subsequently problems will occur. At best, an exception will be generated.
+			D.	Incomplete Program. A program that isn't finished yet will likely behave in unplanned / buggy ways.
+
+11.	How do you know if a result is plausible? What techniques do you have to answer such a question?
+		A result can be verified as "in the range of possible" by estimating or doing napkin math - that is to say
+		taking extremely easy to compute inputs and testing the algorithm with them to verify it is functioning correctly.
+
+12. Compare and contrast having the caller of a function handle the runtime errors versus the called function handling
+	runtime errors.
+		If the caller handles the error, the block of code where the function is called does the error checking. This
+		is flexible but requires a check to be individually implemented every time the function is called. It makes code
+		blocky, ugly, and the checks can't be easily changed. 
+
+		If the called function does its own checking, that check is abstracted to the function call. This makes the 
+		error checking easier to maintain and makes the code much more readible. However, it also checks every single
+		time the function is called which can negatively effect performance on functions that are generally used and
+		may be called repeatedly at a fast frequency. 
+
+13. Why is using exceptions a better idea than returning an error value?
+		An exception separates the detection of an error from the return value, so it can be handled by a throw-catch
+		sequence rather than the code using the return value also having to test for an error return. Furthermore, it 
+		allows us to easily separate error catching code from implementation code, which keeps things tidy and readily
+		understandable.
+
+14.	How do you test if an input operation succeeded?
+		if (!cin) {Error Code here} - This tests to see if cin successfully read a value. If not, it reports an input 
+			error.
+
+15.	Descibe the process of how exceptions are thrown and caught.
+		The throw-catch process works as follows: 
+			Error Occurs that a function cannot handle. 
+			An exception is generated pertaining to the error based on how the exception catching code is implemented
+			or based on the system's premade exceptions.
+			The caller or an indirect caller's catch function will "catch" the exception and execute the code in the
+			catch block to handle the exception.
+
+16.	Why, with a vector called v, is v[v.size()] a range error? What would the result of calling this be?
+		This is an "out of range error" and is given because v.size() reports the size of the vector, whereas the indexing
+		starts with the first element at 0. Thus if you go to v[10], you are trying to go to the tenth element which is
+		actually indexed at 9. Since it is the last element, you are going beyond the vector and thus out of the vector's
+		range. 
+
+17. Define pre-condition and post-condition. Give an example in a computation with a loop.
+		A precondition is a check before the function executes it's code on the inputs. Postcondition is a check on the 
+		return value. For instance:
+
+		int hoursInADay = rand int 24; //  Random number of hours between 0 and 24
+		for (int i = 0; i < 10; i++) // Add 10 hours
+		{
+			add_time(i)
+		}
+		int add_time(int hours)
+		{
+			if (hour < 0)
+			{
+				//Precondition error: Negative.
+			}
+
+			//Code to add hours to hoursInA Day
+
+			if (hoursInADay > 24)
+			{
+				return hours % 24 // Post condition check to make sure the hours in a day do not exceed 24 and respond accordingly.
+			}
+
+			return hoursInThisDay;
+		}	
+
+18.	When would you not test a pre-condition?
+	You would not check for preconditions if the following were true:
+		A.	It is impossible to have bad arguments.
+		B.	It slows down the code (this is rarely applicable, especially in early development.
+		C.	It is too complicated to check. This is a serious reason to consider not checking, as sometimes checking
+			the input can make the code far, far more complicated than the function's actual purpose entails.
+
+19. When would you not test a post-condition?
+		You would not check a post-condition if you don't have a return value. Alternatively if there is a wide
+		range of potential returns then it may be more cumbersome to do a post-check than to check elsewhere.
+
+
+20. What are the steps in debugging a program?
+		1. Get the program to compile.
+		2. Get the program to link.
+		3. Get the program to behave correctly.
+
+21.	Why does commenting help when debugging?
+		Commenting helps us understand the functions either of other programmers or alternatively of ourselves after
+		we've slept a few nights between coding and reading. This gives us the a better understanding of the code flow 
+		and a better mental map of where the bugs might be hiding.
+
+22.	How does testing differ from debugging?
+		Debugging is the elimination of bugs from a program. These may be obvious, for instance if the program just
+		doesn't compile or link, or if an input is clearly causing misbehavior. Testing is the systemic search for 
+		less-obvious bugs using automated inputs or test cases that simulate a user. 
+
