@@ -1,0 +1,58 @@
+Analysis
+Analysis is the act of figuring out the details and required actions to capture a problem and develop a solution for it.
+
+class
+A user defined type that may contain data members, function members, and member types.
+
+class member
+Functions or data members of a class that belong to it exclusively.
+
+data member
+A class member that only contains data.
+
+Design
+The creation of a structure of a system that will address an analyzed problem and how both the wholes system will 
+interact with the user as well as how the subsystems will interact with each other.
+
+divide-by-zero
+An error that typically raises an exception and occurs when you attempt to divide by zero in a computer program.
+
+grammar
+A grammar is the defining syntax that controls how tokens are parsed. 
+
+Implementation
+The writing, debugging, and testing of code that fulfils a designed solution's intent.
+
+interface
+The public-facing members of a class.
+
+Member Function
+A function that is used exclusively by a class and called by an object of that class.
+
+Parser
+An algorithm or code that implements a grammar.
+
+private
+Members of a user-defined class that are used exclusively by objects of that class to produce a desired output.
+
+Prototype
+A small, easily managed, incomplete solution to a problem that solves key aspects of the problem. A prototype allows
+for the rapid testing and development of solutions that can later be implemented in the full program.
+
+pseudocode
+A planning tool that expresses the stepwise intent of a block of code in readily understandable language to help map out 
+a future block of code.
+
+public
+Members of a user-defined class that may be accessed by the outside world.
+
+Syntax Analyzer
+A tool used by grammars that determine which rules of a grammar apply to a token.
+
+Token
+A token is a sequence of characters that represent something we consider to be a whole unit, such as a number, an
+operator, or a command.
+
+Use Case
+A use case is an analytical tool used to determine the relationship between a role(user, input system, etc) and a system 
+(in this case the software) for how it will be used and what it will be expected to produce.

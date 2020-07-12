@@ -1,0 +1,135 @@
+01.	What do we mean by "Programming is Understanding"?
+	Programming is ultimately an understanding of a problem and the implementation of a solution to consistently solve
+	that problem. Programming is understanding refers to the critical requirement of understanding the problem being 
+	addressed so the solution may be correct. Without understanding, programming rarely solves even a single case of
+	the problem, much less provides a consistently correct answer.
+
+02. The chapters details the creation of a calculator program. Write a short analysis of what the calculator 
+	should be able to do.
+	The calculator program should be able to do the following:
+		+	Recieve double input from the user as well as operations.
+		+	Conduct the input-directed operation on the input doubles or sequence of doubles.
+		+	Follow the order of operations to correctly perform serial operations on a sequence.
+		+	Output the correct answer.
+		+	Allow for multiple expressions and answers to be input/output without exiting, unless an exit command is 
+			explicitly given by the user.
+
+03.	How do you break up problem up into smaller, managable parts?
+	A problem can be broken up into smaller parts first by a thorough analysis of the problem. Noting the specific inputs
+	and outputs required to get to the final answer allows you to box those inputs-outputs into their own blocks and 
+	allows you to work on them independently of the whole solution. Additionally this allows you to implement libraries
+	to  keep you from reinventing the wheel as other programmers may already have a working solution to provide a
+	solution to that input-output block.
+
+04. Why is creating a small, limited program a good idea?
+	Small limited programs allow you to create concise, easily debugged, and easily modified prototype solutions to a
+	percieved problem. This allows us to verify that our understanding of the problem is correct, modify the problem 
+	statement if our understanding is incorrect, or lays a foundation for the actual solution later if we find our
+	prototype successfully captures the essence of the issue.
+
+05. Why is feature creep a bad idea?
+	Feature creep is a bad idea on multiple fronts. It can provoke development hell, where no feature is fully complete
+	or optimized but more features continue to be added and thus compound the dysfunction of the system. Additionally
+	it makes development slow, the codebase unweildy, and the scope of the program hard to picture. Furthermore,
+	it leads to burnout where nothing is ever actually finished but instead like Sisyphus we just continue to roll
+	the release ball up the hill only for it roll back down when another feature is added.
+
+06. What are the three main phases of software development?
+	The three phases are analysis, design, and implementation. Analysis is establishing an understanding of the problem.
+	Design is the creation of an overall structure for the system that will address the problem and how the related
+	subsystems will communicate. Implementation is the writing, debugging, and testing of the code that fulfils the design.
+
+07. What is a use case?
+	A use case is an analytical tool used to determine the relationship between a role(user, input system, etc) and a system 
+	(in this case the software) for how it will be used and what it will be expected to produce. This takes into account
+	the role's point of view in using the system as well as the stated problem and allows for the designing of a solution
+	that fits both the role's needs in the solution implementation.
+
+08. What is the purpose of testing?
+	Testing is the systemic debugging of code using a planned(And often vast) series of inputs in order to catch and
+	understand bugs that may arise out of typical or atypical but possible usage. It's purpose is the debug the program
+	in a faster and more comprehensive way than can simply be done by random inputs.
+
+09. According to the outline in the chapter, describe the differences between a Term, an Expression, a Number, 
+	and a Primary.
+	+	Term
+		A term is primary followed by either a * or / operator followed by another primary.
+	+	Expression
+		An expression is the highest(last) of the grammar types, and denotes a term followed by a + or - and a term.
+	+	Number
+		Exclusively a floating-point literal.
+	+	Primary
+		A primary is a number or a '(' or ')' followed by an expression.
+
+10.	in the chapter, an input was broken down into its component Terms, Expressions, Primarys, and Numbers. Do
+	this for (17 + 4)/(5 - 1).
+	This is basically impossible to type out so I drew it. See picture in the book itself.
+
+11.	Why does the program not have a function called number()?
+	A number is only a floating point literal, and thus a number() function would duplicate the functionality of the 
+	double type.
+
+12.	What is a token?
+	A token is a sequence of characters that represent something we consider to be a whole unit, such as a number, an
+	operator, or a command.
+
+13.	What is a grammar? A grammar rule?
+	A grammar is the defining syntax that controls how tokens are parsed. A grammar rule is an instruction on how 
+	a token is to be parsed and dealt with by the program implementing the grammar.
+
+14.	What is a class? What do we use classes for?
+	A class is a specified object type. They are used to designate what type of information an object will hold and
+	how it can and cannot interact with other objects.
+
+15.	How can we provide a default value for a member of a class?
+	Default values are provided for a class via a constructor.
+
+16.	In the expression function, why is the default for the switch-statement to "put back" the token?
+	The put back default is there so the left term's input is not consumed by the reading operation, and thus able to
+	be returned as a final answer if no further expressions are detected.
+
+17.	What is a "look-ahead"?
+	A look-ahead is a method for examining future input before it has been read in order to accurately parse the
+	input and deal with it according to the rules of its grammar.
+
+18. What does putback() do and why is it useful?
+	Putback puts the argument input back into the stream and allows for the input to be used and manipulated without having
+	to pass copies to all the various grammar-rule functions.
+
+19.	Why is the remainder(modulus) operation, %, difficult to implement in the term()?
+	Remainder only works on ints and thus it would require a specialized grammar rule and implementation to convert 
+	the double input into an int and return it as such. This would in turn require making accomodations for rounding 
+	and/or integer truncation.
+
+20. What do we use the two data members of the Token class for?
+	The two members are kind and value. Kind identifies a token as either a number or an operator, while value
+	gives the numeric value should the token be a numberkin.
+
+21. Why do we sometimes split a class's members into private and public members?
+	Splitting a class's members into public and private encapsulates the class's public interface from its private implementation details
+	and therefore allows for cleaner code that only exposes members required to produce the desired output.
+
+22. What happens in the Token_stream class when there is a token in the buffer and the get() function is called?
+	The get function will assign the 'full' value a value of False and return the contents of the buffer.
+
+23. Why were the ';' and 'q' characters added to the switch statemetn in the get() function of the token_stream class?
+	They are included to prevent them being detected as a bad token and instead get returned to the main processing loop.
+
+24. When should we start testing our program?
+	Testing should be done once a prototype is free of compiling and linking errors. I.e. once it runs, it is time to 
+	start testing of the intended, currently included functionalities.
+
+25. What is a "user-defined type"? Why would we want one?
+	A user-defined type is a type created by the user for use within the program. They are extremely useful and allow us
+	to create types that are tailor fitted to our intended uses. It also helps keep the C++ language succinct by allowing
+	the language itself to intrinsically support fewer types.
+
+26. What is the interface to a C++ "user-defined type"?
+	The interface for a C++ user-defined type is the outward facing functions and members
+
+27. Why do we want to rely on libraries of code?
+	Code libraries are useful in that they allow us skip reinventing the wheel and instead use a previously developed
+	solution. Often these solutions will benefit from more resources or experience than we personally have and thus
+	deliver a more efficient and well-thought-out solution than we can come up with. This is especially the case for
+	well known problems that have been solved by various mathematicians and major coding houses for decades.
+
