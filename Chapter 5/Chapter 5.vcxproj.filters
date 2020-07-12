@@ -57,6 +57,9 @@
     <ClCompile Include="Q12.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
+    <ClCompile Include="Q14.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Chapter 5 Drill.h">
