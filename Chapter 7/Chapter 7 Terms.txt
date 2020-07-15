@@ -1,0 +1,23 @@
+Code Layout
+
+Commenting
+
+Error Handling
+An element of coding that deals with how unexpected inputs, operations, or outputs are dealt with.
+
+Feature Creep
+
+Maintenance
+
+Recovery
+
+Revision History
+
+Scaffolding
+
+Symbolic Constant
+A named object with a value that is explicitly marked as not changing by the compiler.
+
+Testing
+The systemic debugging of a program using a large number of inputs that range from standard, expected values to wildly
+unintended inputs.

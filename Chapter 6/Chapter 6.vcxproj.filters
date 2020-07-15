@@ -27,6 +27,33 @@
     <ClCompile Include="Q3.cpp">
       <Filter>Exercises</Filter>
     </ClCompile>
+    <ClCompile Include="Q4.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q5.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q6.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q1.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Q7.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q8.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q9.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q10.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Chapter 6 Review.txt" />

@@ -74,6 +74,7 @@ Token Token_stream::get()
     cin >> ch;    // note that >> skips whitespace (space, newline, tab, etc.)
 
     switch (ch) {
+    case '!':    // for factorial
     case '=':    // for "print"
     case 'x':    // for "quit"
     case '(': case ')': case '{': case '}': case '+': case '-': case '*': case '/':
@@ -124,7 +125,7 @@ double primary()
     case '8':            // we use '8' to represent a number
         return t.value;  // return the number's value
     default:
-        error("primary expected");
+        error("primary expected:");
     }
 }
 
@@ -184,6 +185,23 @@ double expression()
 
 //------------------------------------------------------------------------------
 
+// Factorial Function that deals with '!'.
+
+int factorial(double val)
+{
+    int iVal = static_cast<int>(val);
+    int total = 1;
+    for (;iVal > 1; iVal--)
+    {
+        cout << iVal << " * ";
+        total *= iVal;
+    }
+    cout << "1 = ";
+    return total;
+}
+
+//------------------------------------------------------------------------------
+
 int main()
 try
 {
@@ -195,7 +213,10 @@ try
         Token t = ts.get();
 
         if (t.kind == 'x') break; // 'q' for quit
-        if (t.kind == '=')        // ';' for "print now"
+
+        if (t.kind == '!')
+            cout << factorial(val) << '\n';
+        else if (t.kind == '=')        // '=' for "print now"
             cout << "=" << val << '\n';
         else
             ts.putback(t);
