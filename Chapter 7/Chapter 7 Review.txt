@@ -1,44 +1,86 @@
 01.	What is the purpose of working on the program after the first version works? Give a list of reasons.
+	The first version of a program is rarely the best version. You should continue working on a program to make it more
+	robust and user friendly and should only consider it "finished" when it can be reasonably expected that a competent
+	programmer could take over the code without significant issues.
 
 02. Why does 1+2; q typed into the calculator not quit after it recieves an error?
+	It does not quit because the ';' gets stuck in the buffer and the input string is subsequently not read past that point.
 
 03.	Why did we choose to make a constant character called number?
 	The use of a constant named number allows us to eliminate the magic number 8 and instead just use "number" in its 
 	place.
 
 04.	We split main() into two separate functions. What does the new fuction do and why did we split main()?
+	The function we split from main() was the calculate() function. This was to encapsulate the calcuation logic of the 
+	calculator away from the program logic that controlled how the program booted, ran, and ended. It also served to 
+	make main() a single logical action function, which was that it scaffolded all the calcuation functions.
 
 05.	Why do we split code into multiple functions? State principles.
+	We split a program into functions so it can be cleanly separated into discrete logical units. Therefore the principle
+	to be distilled is that if function is performing two logical actions, it should be split. A policy of one-action-one
+	function is ideal, although that cannot always be assured.
 
 06.	What is the purpose of commenting and and how should it be done?
+	Commenting serves to explain what isn't imminently obvious in the code itself, or to explain why the code exists
+	in a broader picture. It should be done sparsely and succinctly. If code explains itself, do not comment it. However,
+	in other situaions, for instance complex functions or grammars, a comment explaining the overall purpose is appropriate.
 
 07.	What does narrow_cast do?
+	Narrow cast is similar to static_cast, except that it will throw an exception if data narrowing is detected.
 
 08.	What is the use of symbolic constants?
+	Symbolic constants are useful in defining a non-changing value by a readily identifiable name as opposed to 
+	simply a magic value. This also helps us maintain code since it means that changing the value in the code dependant
+	on one location, the constant definition, as opposed to every occurance of that definition. Additionally, it makes
+	changing the name of the value much easier since a rename function can be applied to a constant name whereas a value
+	cannot easily be refactored by a renaming script. 
 
 09.	Why do we care about code layout?
+	Code layout improves readability and maintainability of the code base. By laying out code in a logical and discrete 
+	fashion it is easily to navigate to a problem area and reduces the potential places a bug can hide. Furthermore,
+	it keeps us honest when coding and helps reduce verbose, poorly concieved solutions.
 
 10.	How do we handle %(remainder) of floating point numbers?
+	It can be handled by either forbidding the operation entirely, or by writing a function that takes advantage of 
+	double modulus math and implements a x%y == x-y*int(x/y).
 
 11.	What does is_declared() do and how does it work?
+	is_declared() checks the entire var table and returns true if a var of the argument name is present. If not, it returns
+	false.
 
 12.	The input representation for let is more than one character. How is it accepted as a single token in the modified code?
+	It is used by having it input as a string and checking to see if the string matches the constant string "let". If 
+	so, the char-string constructor is used in the Token class.
 
 13.	What are the rules for what names can and cannot be in the calculator program?
+	Names must be alphanumeric characters and cannot start with a number.
 
 14.	Why is it a good idea to build a program incrementally?
+	Incremental building allows for you to approach problems in small chunks, which allows for the production, testing, and
+	debugging of each incremental feature rather than presenting every problem present in a program at once.
 
 15. When do you start to test?
+	You should start to test once the program is in a state where it can reliably and successfully perform its logical loop.
 
 16.	Why do you retest?
+	You retest when you add features or fix bugs to make sure you have not introduced other problems in the process.
 
 17. How do you decide what should be a separate function?
+	A separate function should be implemented when it is a separate logical action. A good rule of thumb is 
+	one-function-per-one-logical-action.
 
 18.	How do you choose names for variables and functions? List possible reasons.
+	Names are difficult but best picked based on your particular usage case. They should be composed of alphanumeric 
+	characters and succinctly describe the value they are representing. For instance, FeetToInches = 12.
 
 19. Why do you add comments?
+	Comments help explain what is not immediately obvious in the code itself.
 
 20. What should be in comments and what should not?
+	Comments should contain succinct, helpful notes for understand how code or functions flow. At the top of a body
+	of code, some explaination on why the code exists and what called for it might also be appropriate. Comments absolutely 
+	should never be used as your ideas pad, or to store old code, or to explain what is obvious in the code. They should
+	not try and teach basics of a programming language unless that is the expressed intent of the entire file.
 
 21. When do we consider a program finished?
 	A program is "finished" when it could be reasonably expected that another individual could take over the code and

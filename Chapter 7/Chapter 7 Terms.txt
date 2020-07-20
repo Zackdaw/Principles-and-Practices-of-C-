@@ -1,19 +1,28 @@
 Code Layout
+The structure of a program's source code.
 
 Commenting
+The practice of explaining what isn't imminently obvious in the code by non-compiled code commentary.
 
 Error Handling
 An element of coding that deals with how unexpected inputs, operations, or outputs are dealt with.
 
 Feature Creep
+A negative tendency to add additional functionality to a program "just in case". Often results in poorly implemented, 
+bloated solutions.
 
 Maintenance
+The act of supporting software after its primary release by debugging and updating for changing computer systems.
 
 Recovery
+The process by which a program recovers from an error without fully restarting / exiting.
 
 Revision History
+The history of changes and improvements to code. Normally kept in comments in the code or in a changelog.
 
 Scaffolding
+A function in a program that provides the framework that other functions operate within. For instance, the main method
+scaffolds the program by giving instructions on starting, running, terminating, and handling errors in the program.
 
 Symbolic Constant
 A named object with a value that is explicitly marked as not changing by the compiler.

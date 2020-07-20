@@ -18,4 +18,9 @@
     <Text Include="Chapter 7 Review.txt" />
     <Text Include="Chapter 7 Terms.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Chapter 7 Drill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
