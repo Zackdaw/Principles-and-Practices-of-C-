@@ -32,9 +32,9 @@ public:
 
 //------------------------------------------------------------------------------
 
-class Token_stream {
+class TokenStream {
 public:
-    Token_stream();   // make a Token_stream that reads from cin
+    TokenStream();   // make a Token_stream that reads from cin
     Token get();      // get a Token (get() is defined elsewhere)
     void putback(Token t);    // put a Token back
 private:
@@ -45,7 +45,7 @@ private:
 //------------------------------------------------------------------------------
 
 // The constructor just sets full to indicate that the buffer is empty:
-Token_stream::Token_stream()
+TokenStream::TokenStream()
     :full(false), buffer(0)    // no Token in buffer
 {
 }
@@ -53,7 +53,7 @@ Token_stream::Token_stream()
 //------------------------------------------------------------------------------
 
 // The putback() member function puts its argument back into the Token_stream's buffer:
-void Token_stream::putback(Token t)
+void TokenStream::putback(Token t)
 {
     if (full) error("putback() into a full buffer");
     buffer = t;       // copy t to buffer
@@ -62,7 +62,7 @@ void Token_stream::putback(Token t)
 
 //------------------------------------------------------------------------------
 
-Token Token_stream::get()
+Token TokenStream::get()
 {
     if (full) {       // do we already have a Token ready?
         // remove token from buffer
@@ -95,7 +95,7 @@ Token Token_stream::get()
 
 //------------------------------------------------------------------------------
 
-Token_stream ts;        // provides get() and putback() 
+TokenStream ts;        // provides get() and putback() 
 
 //------------------------------------------------------------------------------
 

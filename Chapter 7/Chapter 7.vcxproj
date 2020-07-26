@@ -139,11 +139,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <Text Include="Chapter 7 Special Note.txt" />
     <Text Include="Chapter 7 Review.txt" />
     <Text Include="Chapter 7 Terms.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Chapter 7 Drill.cpp" />
+    <ClCompile Include="Token.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="TokenStream.cpp" />
+    <ClCompile Include="Variable.cpp" />
+    <ClCompile Include="VariableTable.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C7_Header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

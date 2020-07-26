@@ -17,10 +17,28 @@
   <ItemGroup>
     <Text Include="Chapter 7 Review.txt" />
     <Text Include="Chapter 7 Terms.txt" />
+    <Text Include="Chapter 7 Special Note.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Chapter 7 Drill.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Token.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TokenStream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Variable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="VariableTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C7_Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

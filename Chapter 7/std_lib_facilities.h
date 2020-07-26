@@ -214,7 +214,7 @@ template<class R, class A> R narrow_cast(const A& a)
 }
 
 // random number generators. See 24.7.
-
+/*
 default_random_engine& get_rand()
 {
 	static default_random_engine ran;
@@ -230,7 +230,7 @@ inline int randint(int max) { return randint(0, max); }
 //inline double sqrt(int x) { return sqrt(double(x)); }	// to match C++0x
 
 // container algorithms. See 21.9.
-
+*/
 template<typename C>
 using Value_type = typename C::value_type;
 

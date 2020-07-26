@@ -1,0 +1,16 @@
+Chapter 7 is a rather difficult one to do the structure that has been established for previous chapters due to the 
+questions being for a different version of the calculator than the one that is now online. Due to this, the exercises
+and drills are altered somewhat to take the most from the as possible but do not necessarily follow the book.
+
+Changes are as follows:
+	+	Rather than implementing partial solutions for the exercises that don't make sense in the context of the 
+		new calculator version, the calculator was refactored into a more modular program.
+	+	Several questions were poorly stated and I could not figure out exactly what was being asked. Therefore in these
+		questions I have instead simply made the program more usable. In particular, exercises 5 - 11 are of 
+		questionable value in terms of actually learning more about C++ rather than simply moving around existing 
+		functions.
+	+	A much larger emphasis was placed on creating a usable calculator that is modularly programmed and makes greater
+		use of headers and constants to allow for a more easily maintainable program.
+
+For this reason, Chapter 7 is a bit of a mess but is complete in the sense that it accurately completes the intention
+of the chapter.

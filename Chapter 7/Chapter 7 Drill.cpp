@@ -1,11 +1,4 @@
-
 /*
-	calculator08buggy.cpp
-
-	Helpful comments removed.
-
-	We have inserted 3 bugs that the compiler will catch and 3 that it won't.
-
 	Drill Instructions for Portability
 
 	01. Starting from the file below, get the calculator to compile. // Done
@@ -23,156 +16,16 @@
 	10. Change the delcaration keyword from let to #. // Complete;
 	11. Change the quit keyword from quit to exit. // Complete;
 */
+#include "C7_Header.h"
 
-#include "std_lib_facilities.h"
+void cleanTokens();
 
-void clean_up_mess();
-
-//Token class exists to classify input as either operators, variables, or numbers.
-class Token {
-public:
-	char kind;
-	double value;
-	string name;
-	Token(char ch) :kind(ch), value(0) { }
-	Token(char ch, double val) :kind(ch), value(val) { }
-	Token(char ch, string n) : kind(ch), value(0), name(n)  {}
-};
-
-//The token stream allows for tokens to be taken out and replaced, allowing for greater flexibility and look-ahead
-//functionality.
-class Token_stream {
-	bool full;
-	Token buffer;
-public:
-	Token_stream() :full(0), buffer(0) { }
-
-	Token get();
-	void putback(Token t) { buffer = t; full = true; }
-
-	void ignore(char);
-};
-
-const char let = '#';
-const char quit = 'Q';
-const char print = ';';
-const char number = '8';
-const char name = 'a';
-const char squareRoot = 'I';
-
-// The get function returns the appropriate token from the token stream.
-Token Token_stream::get()
-{
-	if (full) 
-	{ 
-		full = false; 
-		return buffer; 
-	}
-	char ch;
-	cin >> ch;
-	switch (ch) 
-	{
-		case '(':
-		case ')':
-		case '+':
-		case '-':
-		case '*':
-		case '/':
-		case '%':
-		case ';':
-		case '^':
-		case '=':
-		{
-			return Token(ch);
-		}
-		case '.':
-		case '0':
-		case '1':
-		case '2':
-		case '3':
-		case '4':
-		case '5':
-		case '6':
-		case '7':
-		case '8':
-		case '9':
-		{	
-			cin.unget();
-			double val;
-			cin >> val;
-			return Token(number, val);
-		}
-		case let: 
-			return Token(let);
-		default:
-			if (isalpha(ch)) 
-			{
-				string s;
-				s += ch;
-				while (cin.get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_') ) s += ch;
-				cin.unget();
-				cout << s;
-				if (s == "sqrt") return Token(squareRoot);
-				if (s == "k") return Token(number, 1000);
-				if (s == "exit") return Token(quit);
-				return Token(name, s);
-			} 
-			error("Bad token");
-	}
-}
-
-// Required so the token stream can ignore abnormal input.
-void Token_stream::ignore(char c)
-{
-	if (full && c == buffer.kind) {
-		full = false;
-		return;
-	}
-	full = false;
-
-	char ch;
-	while (cin >> ch)
-		if (ch == c) return;
-}
-
-struct Variable 
-{
-	string name;
-	double value;
-	Variable(string n, double v) :name(n), value(v) { }
-};
-
-vector<Variable> names;
-
-double get_value(string s)
-{
-	for (int i = 0; i < names.size(); ++i)
-		if (names[i].name == s) return names[i].value;
-	error("get: undefined name ", s);
-}
-
-void set_value(string s, double d)
-{
-	for (int i = 0; i <= names.size(); ++i)
-		if (names[i].name == s) {
-			names[i].value = d;
-			return;
-		}
-	error("set: undefined name ", s);
-}
-
-bool is_declared(string s)
-{
-	for (int i = 0; i < names.size(); ++i)
-		if (names[i].name == s) return true;
-	return false;
-}
-
-double GetSquareRoot(double d)
+double getSquareRoot(double d)
 {
 	if (d < 0)
 	{
 		error("Square Roots of negative numbers are undefined.");
+		return 0;
 	}
 	else
 	{
@@ -180,7 +33,8 @@ double GetSquareRoot(double d)
 	}
 }
 
-Token_stream ts;
+TokenStream ts;
+VariableTable vt;
 double expression();
 
 double primary()
@@ -198,17 +52,16 @@ double primary()
 	case '-':
 		return -primary();
 	case squareRoot:
-		cout << "Case statement Reached\n";
-		return GetSquareRoot(primary());
+		return getSquareRoot(primary());
 	case number:
 		return t.value;
 	case name:
 	{
-		return get_value(t.name);
+		return vt.getValue(t.name);
 	}
 	default:
 		error("primary expected");
-		clean_up_mess();
+		cleanTokens();
 	}
 }
 
@@ -276,19 +129,29 @@ double expression()
 
 double declaration()
 {
-	// Get the token following the let statement.
 	Token t = ts.get();
-	// Throw an error if the type doesn't match that of a valid name, such as a number instead.
-	if (t.kind != 'a') error("name expected in declaration");
+	if (t.kind != 'a') 
+	{
+		error("name expected in declaration");
+	}
 	string name = t.name;
-	//Check if the name is already declared, since we cannot reassign variables.	
-	if (is_declared(name)) error(name, " declared twice");
-	//Get the next token, check and make sure it uses the assignment operator '=', and then run expression() if so.
+
 	Token t2 = ts.get();
-	if (t2.kind != '=') error("= missing in declaration of ", name);
+	if (t2.kind != '=')
+	{
+		error("= missing in declaration of ", name);
+	}
+
 	double d = expression();
-	//Add the new variable with the name and value to the variable vector.
-	names.push_back(Variable(name, d));
+
+	if (vt.isDeclared(name))
+	{
+		vt.setValue(name, d);
+	}
+	else
+	{
+		vt.addVariable(Variable(name, d));
+	}
 	return d;
 }
 
@@ -307,13 +170,10 @@ double statement()
 	}
 }
 
-void clean_up_mess()
+void cleanTokens()
 {
 	ts.ignore(print);
 }
-
-const string prompt = "> ";
-const string result = "= ";
 
 void calculate()
 {
@@ -333,7 +193,7 @@ void calculate()
 	}
 	catch (runtime_error& e) {
 		cerr << e.what() << endl;
-		clean_up_mess();
+		cleanTokens();
 	}
 }
 
