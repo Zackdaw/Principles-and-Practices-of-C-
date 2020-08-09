@@ -24,10 +24,11 @@ public:
 
 class TokenStream 
 {
+	istream& inStream;
 	bool full;
 	Token buffer;
 public:
-	TokenStream() :full(0), buffer(0) { }
+	TokenStream(istream& inputStream) :inStream(inputStream), full(0), buffer(0) { }
 
 	Token get();
 	void putback(Token t);

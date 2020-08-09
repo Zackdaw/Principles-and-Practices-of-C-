@@ -16,9 +16,9 @@
 	10. Change the delcaration keyword from let to #. // Complete;
 	11. Change the quit keyword from quit to exit. // Complete;
 */
-#include "C7_Header.h"
+#include "Q1_Header.h"
 
-void cleanTokens();
+void cleanTokens(TokenStream& ts);
 
 double getSquareRoot(double d)
 {
@@ -33,26 +33,25 @@ double getSquareRoot(double d)
 	}
 }
 
-TokenStream ts;
+double expression(TokenStream& ts);
 VariableTable vt;
-double expression();
 
-double primary()
+double primary(TokenStream& ts)
 {
 	Token t = ts.get();
 	switch (t.kind) {
 		//For parenthesis in particular, reloop to expression if an opening parenthesis is detected. Then return the total of that subloop upon detecting a closing parenthesis.
 	case '(':
 	{	
-		double d = expression();
+		double d = expression(ts);
 		t = ts.get();
 		if (t.kind != ')') error("'(' expected");
 		return d;
 	}
 	case '-':
-		return -primary();
+		return -primary(ts);
 	case squareRoot:
-		return getSquareRoot(primary());
+		return getSquareRoot(primary(ts));
 	case number:
 		return t.value;
 	case name:
@@ -61,20 +60,20 @@ double primary()
 	}
 	default:
 		error("primary expected");
-		cleanTokens();
+		cleanTokens(ts);
 	}
 }
 
-double secondary()
+double secondary(TokenStream& ts)
 {
-	double left = primary();
+	double left = primary(ts);
 	while (true)
 	{
 		Token t = ts.get();
 		switch (t.kind)
 		{
 		case '^':
-			left = pow(left, primary());
+			left = pow(left, primary(ts));
 			break;
 		default:
 			ts.putback(t);
@@ -83,20 +82,21 @@ double secondary()
 	}
 }
 
-double term()
+double term(TokenStream& ts)
 {
-	double left = secondary();
+	double left = secondary(ts);
+
 	while (true) 
 	{
 		Token t = ts.get();
 		switch (t.kind) 
 		{
 		case '*':
-			left *= secondary();
+			left *= secondary(ts);
 			break;
 		case '/':
 			{	
-				double d = secondary();
+				double d = secondary(ts);
 				if (d == 0) error("divide by zero");
 				left /= d;
 				break;
@@ -108,17 +108,17 @@ double term()
 	}
 }
 
-double expression()
+double expression(TokenStream& ts)
 {
-	double left = term();
+	double left = term(ts);
 	while (true) {
 		Token t = ts.get();
 		switch (t.kind) {
 		case '+':
-			left += term();
+			left += term(ts);
 			break;
 		case '-':
-			left -= term();
+			left -= term(ts);
 			break;
 		default:
 			ts.putback(t);
@@ -127,7 +127,7 @@ double expression()
 	}
 }
 
-double declaration()
+double declaration(TokenStream& ts)
 {
 	Token t = ts.get();
 	if (t.kind != 'a') 
@@ -142,7 +142,7 @@ double declaration()
 		error("= missing in declaration of ", name);
 	}
 
-	double d = expression();
+	double d = expression(ts);
 
 	if (vt.isDeclared(name))
 	{
@@ -155,28 +155,30 @@ double declaration()
 	return d;
 }
 
-double statement()
+double statement(TokenStream& ts)
 {
 	//Get the token from the stream. This would be the token put back into the stream by the Calculate() function for the first call.
 	Token t = ts.get();
 	switch (t.kind) {
 		//If the token is a Let, return the declaration function's results.
 	case let:
-		return declaration();
+		return declaration(ts);
 		//Otherwise, put the token back into the stream and return the results of the expression() function.
 	default:
 		ts.putback(t);
-		return expression();
+		return expression(ts);
 	}
 }
 
-void cleanTokens()
+void cleanTokens(TokenStream& ts)
 {
 	ts.ignore(print);
 }
 
 void calculate()
 {
+	TokenStream ts(std::cin);
+
 	while (true) try {
 		//Display the prompt.
 		cout << prompt;
@@ -189,11 +191,11 @@ void calculate()
 		// Put the token back into the stream.
 		ts.putback(t);
 		//Print the result constant char, run the statement() function, then insert the end line character and flushes the buffer using endl.
-		cout << result << statement() << endl;
+		cout << result << statement(ts) << endl;
 	}
 	catch (runtime_error& e) {
 		cerr << e.what() << endl;
-		cleanTokens();
+		cleanTokens(ts);
 	}
 }
 

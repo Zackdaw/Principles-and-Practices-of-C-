@@ -1,4 +1,4 @@
-#include "C7_Header.h"
+#include "Q1_Header.h"
 
 Token TokenStream::get()
 {
@@ -8,7 +8,7 @@ Token TokenStream::get()
 		return buffer;
 	}
 	char ch;
-	cin >> ch;
+	inStream >> ch;
 	switch (ch)
 	{
 	case '(':
@@ -36,9 +36,9 @@ Token TokenStream::get()
 	case '8':
 	case '9':
 	{
-		cin.unget();
+		inStream.unget();
 		double val;
-		cin >> val;
+		inStream >> val;
 		return Token(number, val);
 	}
 	case let:
@@ -48,15 +48,16 @@ Token TokenStream::get()
 		{
 			string s;
 			s += ch;
-			while (cin.get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_')) s += ch;
-			cin.unget();
+			while (inStream.get(ch) && (isalpha(ch) || isdigit(ch) || ch == '_')) s += ch;
+			inStream.unget();
 			cout << s;
 			if (s == "sqrt") return Token(squareRoot);
 			if (s == "k") return Token(number, 1000);
-			if (s == "exit") return Token(quit);
+			if (s == "exit" || s == "quit") return Token(quit);
 			return Token(name, s);
 		}
 		error("Bad token");
+		return Token(0, 0);
 	}
 }
 
@@ -75,6 +76,6 @@ void TokenStream::ignore(char c)
 	full = false;
 
 	char ch;
-	while (cin >> ch)
+	while (inStream >> ch)
 		if (ch == c) return;
 }

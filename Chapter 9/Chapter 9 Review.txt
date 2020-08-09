@@ -1,0 +1,45 @@
+1.	What are the two parts of a class, as described in the chapter?
+	The two elements of a class are the interface and the implementation.
+
+2.	What is the difference between the interface and the implementation in a class?
+	The interface is the means by which a user interacts with the class and contains the functions and data members that
+	will be publicly accessable. The implementation is the code which the user can only access via the interface and 
+	contains the inner working of the class that are not immediately required to be visible to the user for use.
+
+3.	What are the limitations and problems of the original Date struct that is created in this chapter?
+	The limitations are that it is tedious and requires significant amounts of manual data entry. Furthermore it does
+	not check for errors and allows for invalid dates to be input.
+
+4.	Why is a constructor used for the date type instead of an init_day() function?
+	A constructor is used because it cannot be forgotten, unlike an init_day() function, and thus requires all the 
+	variables be initialized when creating a date or it will throw an error. This avoids errors such as forgetting to
+	initialize a variable.
+
+5.	What is Invariant? Give examples.
+	An invariant is the rule which determines if data is valid for the intentions of the class or not. For instance,
+	the invariant for a date class would be a valid day number for a valid month number for a valid year number. 
+	Another example would be an invariant for a user record class, where a positive age would be the only valid input.
+
+6.	When should functions be put in the class definition? When should they be defined outside the class?
+	Functions should be put in the class definition when they are short and you require the performance boost of
+	in-lining functions. For instance, a simple return-value function would benefit greatly while not creating a significantly
+	larger class definition. Furthermore, the in-line function should be one where you do not anticipate the function 
+	changing very much. This is due to the required full recompilation of all uses of the function when the in-line body
+	changes as opposed to if it is elsewhere.
+	Functions should be defined out-of-class when they are large and prone to change, as this allows that function body
+	to be altered and used without requiring an extensive recompile.
+
+7.	When should operator overloading be used in a program? Give a list of operators that you may wish to overload.
+	Operator overloading should be used primarily when you:
+		1) Know what you are doing.
+		2) Have a use case in mind for that operator with the class.
+		3) Overloading the operator make the code more readable.
+	Some operators that are overloaded are conventional operators adapted to the class, for instance a + sign, which can
+	help code readability and make it more compact. Operators should not be overloaded if they add obscure or 
+	non-conventional operations to otherwise well understood operators. 
+	
+8.	Why should the public interface to a class be as small as possible?
+
+9.	What does adding const to a member function do?
+
+10.	Why are "helper functions" best placed outside of the class definition?

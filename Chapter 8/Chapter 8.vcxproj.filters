@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Drill">
+      <UniqueIdentifier>{2c1bf99e-7743-4e8e-b25b-650f43eb788e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Drill">
+      <UniqueIdentifier>{017f411f-d880-4f15-9b3c-d46a260bca49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises">
+      <UniqueIdentifier>{48f7099f-6f06-4f26-b944-5e86164aa100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Question 1">
+      <UniqueIdentifier>{d206f7ad-a4c8-4314-94eb-d8add6b93a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Question 2">
+      <UniqueIdentifier>{04c305ac-ebbd-4d4f-b60b-ba7b021e7588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Question 3">
+      <UniqueIdentifier>{f9ae22d2-4e5e-46fe-9dc5-f82ab8798483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Question 4">
+      <UniqueIdentifier>{22eb5f97-db5f-4c48-83b7-4c136ec586ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C8_Drill.cpp">
+      <Filter>Source Files\Drill</Filter>
+    </ClCompile>
+    <ClCompile Include="C8_Drill_Namespaces.cpp">
+      <Filter>Source Files\Drill</Filter>
+    </ClCompile>
+    <ClCompile Include="C8_Drill_Usage.cpp">
+      <Filter>Source Files\Drill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Chapter 7\Token.cpp">
+      <Filter>Exercises\Question 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Chapter 7\TokenStream.cpp">
+      <Filter>Exercises\Question 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Chapter 7\Variable.cpp">
+      <Filter>Exercises\Question 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Chapter 7\VariableTable.cpp">
+      <Filter>Exercises\Question 1</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Chapter 7\Chapter 8 Question 1.cpp">
+      <Filter>Exercises\Question 1</Filter>
+    </ClCompile>
+    <ClCompile Include="Q2.cpp">
+      <Filter>Exercises\Question 2</Filter>
+    </ClCompile>
+    <ClCompile Include="Q3.cpp">
+      <Filter>Exercises\Question 3</Filter>
+    </ClCompile>
+    <ClCompile Include="Q5.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q6.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q7 - Q8.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q9.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q10.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q11.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q12.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q13.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+    <ClCompile Include="Q14.cpp">
+      <Filter>Exercises</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C8_H.h">
+      <Filter>Header Files\Drill</Filter>
+    </ClInclude>
+    <ClInclude Include="C8E_Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Chapter 7\Q1_Header.h">
+      <Filter>Exercises\Question 1</Filter>
+    </ClInclude>
+    <ClInclude Include="Q2H.h">
+      <Filter>Exercises\Question 2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Text.txt">
+      <Filter>Exercises\Question 4</Filter>
+    </Text>
+    <Text Include="Chapter 8 Review.txt" />
+    <Text Include="Chapter 8 Terms.txt" />
+  </ItemGroup>
+</Project>

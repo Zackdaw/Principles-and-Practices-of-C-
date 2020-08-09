@@ -1,0 +1,116 @@
+Activation Record
+A function entry that is pushed onto the call-stack. It contains all the information needed to return a value to its 
+caller.
+
+Argument
+A value or reference that is passed to a function or a template which is accessed through a parameter.
+
+Argument Passing
+The method of passing data into a function, either by value, reference, or const-reference.
+
+Call Stack
+A data structure that follows LIFO organization and contains the activation records of functions in a program.
+
+Class Scope
+A region of code denoted by a class where names will be recognized. 
+
+const
+A keyword that makes the relevant variable unmodifiable at runtime and possibly at compile time.
+
+constexpr
+A keyword that makes the relevant variable unmodifiable at compile time. This is different from a const in that it
+forces a compile-time constant instead of allowing for it to be a run-time constant.
+
+Declaration
+A declaration is statement that introduces a name to a scope. 
+
+Definition
+A definition is a declaration that also sets aside memory for the declared variable and contains execution details.
+
+extern
+A keyword that denotes the relevant declaration is not the definition, which is elsewhere.
+
+Forward Declaration
+A declaration that introduces a function before its definition so it may be used by functions "forward" of it.
+
+Function
+A logical unit of computation that may be called from other parts of the program.
+
+Function Definition
+The function definition provides both the declaration as well as the implementation details of a function, i.e. the 
+actual code block.
+
+Global Scope
+A scope that encompasses the entire program.
+
+Header File
+A file that is a collection of declarations which may be shared across source files using the #include statement.
+
+Initializer
+A statement which gives a the initial value to a variable.
+
+Local Scope
+A scope that extends to the function or struct that it is defined in.
+
+Namespace
+A large organzational class which contains functions, classes, data, and types into an identifiable and named part of a
+program without being of a specific type itself. Allows for the separations of names and identifiers based on "namespace" 
+of a program.
+
+Namespace Scope
+A larger organizational scope that encompasses all identifiers in that namespace.
+
+Nested Block
+A block of code that is nested within a larger block of code. This leads to an order of operations where the lowest
+nested block is executed before the outer blocks are executed.
+
+Parameter
+Formal representation of argument types required by a function.
+
+Pass-By-Const-Reference
+A method of argument passing where a reference to a data location is passed to the function, but the function may
+not edit that location in any way, shape, or form. This allows for the secure reading of data in a memory location without
+having to copy it.
+
+Pass-By-Reference
+A method of argument passing where a reference to a data location is passed to a function and said function may edit
+the contents of that location. Useful for directly manipulating data in-place, also for cases where multiple return 
+values are required by the caller.
+
+Pass-By-Value
+The standard argument passing method which makes a copy of the argument and provides that copy to the function, therefore
+preserving the original argument value and allow the function to manipulate the data of the copy. Computationally expensive
+when passing large data structures.
+
+Recursion
+When a function calls itself.
+
+Return
+A keyword that is followed by a data identifier to return. Signifies the end of a function and that it is to return the
+designated variable. The designated variable must concur with the declared return type in the declaration and definition.
+
+Return Value
+The data returned by a return statement. 
+
+Scope
+A region of code where identifiers will be recognized. Outside of the scope the program will be "unaware" of the identifiers.
+
+Statement Scope
+The scope within a single statement such as a for loop or while loop.
+
+Technicalities
+The deeply technical nuances of a specific language that may not be translatable to other programming languages, as 
+opposed to programming concepts which are nearly universal due to the basic form of information in this iteration of the
+universe.
+
+Undeclared Identifier
+An identifier error that is thrown when an identifier is used prior to being declared in the source document or included headers. 
+
+"Using" Declaration
+A declaration of a specific function or variable in a different namespace that allows for shorthand use of that function,
+for instance "using std::cout".
+
+"Using" Directive
+A broader form of the Using declaration where an entire namespace is used as a backup namespace if a declaration is not
+found in the source namespace. For instance, using namespace std; Generally speaking, this should not be done except for
+in the case of large, widely used namespaces, such as STD. Otherwise it is just a recipe for confusion.

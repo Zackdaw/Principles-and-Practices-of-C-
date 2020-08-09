@@ -1,0 +1,58 @@
+Built-In Types
+Build-In types are types that are intrinsic to the language, such as Int, char, and double. A type is built-in if the
+compiler recognizes it and knows what to do with it without a declaration being included in the source code or header.
+
+class
+A user-defined type that specifies how an object is to be represented, constructed, interfaced with, and deconstructed.
+
+const
+
+Constructor
+A member function with the same name as the class that is called upon creating an object that requires designated parameters.
+
+Destructor
+
+enum
+A simple user-defined type that specifies values for a series of symbolic constants.
+
+Enumeration
+A structure referred to as an enum that allows for a sequence of values to be given symbolic constants and types.
+Enumerations come in both scoped and plain varieties. In general, modern code does not use plain enumerations due to 
+possible scope mix-ups and surprises with unintended number comparisons.
+
+Enumerator
+The values in an enum body.
+
+Helper Function
+
+Implementation
+The code of a class that is required for the class to successfully run but not essential to interacting with the class.
+
+In-Class Initializer
+When a class 
+
+Inlining
+
+Interface
+Code for a class that is visible to public and determines how a class may be called by the rest of the program.
+
+Invariant
+The rule(s) for what consistutes a valid value and subsequently a valid state for an object.
+
+Representation
+Representation is when a type knows how to hold the data it is provided, i.e. how to represent the data we are giving it.
+
+struct
+A user defined type intended to only store data where all members are public by default.
+
+Structure
+The method by which data is organized in an object.
+
+User-Defined Types
+Types created by the user to store data per a user-specified structure. User defined types are intrisically composed
+of built-in types.
+
+Valid State
+When an object has a value that is valid for the intents and usages of the objects. An object is in an invalid state if
+the values contained are erroneous or otherwise invalid, for instance, a date of Febtober in the date class, or a negative
+user age.
