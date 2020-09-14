@@ -16,12 +16,87 @@
     <Filter Include="Source Files\Chapter 9 Drill">
       <UniqueIdentifier>{b23099b6-1e95-445b-b513-aba83ac9e42c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Chapter 9 Exercises">
-      <UniqueIdentifier>{46456f8d-9945-47f5-b6af-fdfa605b85a6}</UniqueIdentifier>
+    <Filter Include="Exercises">
+      <UniqueIdentifier>{fb902a55-7c7f-4f3b-8ca9-7fd471031932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Q11,12">
+      <UniqueIdentifier>{6c4d93ce-16ed-44d8-81e2-c2ead682a601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Q01">
+      <UniqueIdentifier>{fe02be3b-5c28-4149-acb0-919b09a86443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Q02,3">
+      <UniqueIdentifier>{c17e8c98-671a-48a4-ae76-bd2488150caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Q04">
+      <UniqueIdentifier>{0c155a71-9427-480c-88b4-05582fe34e4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Q05-10">
+      <UniqueIdentifier>{bf587b01-671a-4426-9e43-40507a33a901}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Chapter 9 Terms.txt" />
     <Text Include="Chapter 9 Review.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Drill 9.4.1-2.cpp">
+      <Filter>Source Files\Chapter 9 Drill</Filter>
+    </ClCompile>
+    <ClCompile Include="Drill 9.4.3.cpp">
+      <Filter>Source Files\Chapter 9 Drill</Filter>
+    </ClCompile>
+    <ClCompile Include="Drill 9.7.4.cpp">
+      <Filter>Source Files\Chapter 9 Drill</Filter>
+    </ClCompile>
+    <ClCompile Include="Q2,3.cpp">
+      <Filter>Exercises\Q02,3</Filter>
+    </ClCompile>
+    <ClCompile Include="Q1.cpp">
+      <Filter>Exercises\Q01</Filter>
+    </ClCompile>
+    <ClCompile Include="NamePair.cpp">
+      <Filter>Exercises\Q02,3</Filter>
+    </ClCompile>
+    <ClCompile Include="Book.cpp">
+      <Filter>Exercises\Q05-10</Filter>
+    </ClCompile>
+    <ClCompile Include="Patron.cpp">
+      <Filter>Exercises\Q05-10</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Exercises\Q05-10</Filter>
+    </ClCompile>
+    <ClCompile Include="Date.cpp">
+      <Filter>Exercises\Q05-10</Filter>
+    </ClCompile>
+    <ClCompile Include="Library.cpp">
+      <Filter>Exercises\Q05-10</Filter>
+    </ClCompile>
+    <ClCompile Include="LongDate.cpp">
+      <Filter>Exercises\Q11,12</Filter>
+    </ClCompile>
+    <ClCompile Include="Q12.cpp">
+      <Filter>Exercises\Q11,12</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Q2,3H.h">
+      <Filter>Exercises\Q02,3</Filter>
+    </ClInclude>
+    <ClInclude Include="Q5-9.h">
+      <Filter>Exercises\Q05-10</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LongDate.h">
+      <Filter>Exercises\Q11,12</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Chapter 9.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

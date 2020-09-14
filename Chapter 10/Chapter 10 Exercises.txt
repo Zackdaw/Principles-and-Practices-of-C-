@@ -1,0 +1,34 @@
+01.	Write a program that produces the sum of all the numbers in a file of white-space separated integers.
+
+02.	Write a program that creates a file of data in the form of the temperature Reading type defined in 10.5.
+	For testing, fill the file with a least 50 "temperature" readings. Call this program "store_temps.cpp" and
+	the file it creates raw_temps.txt.
+
+03.	Write a program that reads the data from raw_temps created in 02 into a vector and then calculates the
+	mean and median temperatures in your data set. Call this program temp_stats.cpp.
+	
+04.	Modify the store_temps.cpp program from exercise 2 to include a temperature suffix 'c' for Celsius or 'f' for
+	Fahrenheit. Modify the temp_stats.cpp program to test each temperature and convert the temperature to 
+	Fahrenheit if necessary before putting them in the vector.
+
+05.	Write the function print_year() mentioned in 10.11.2.
+
+06.	Define a Roman_int class for holding Roman numerals as ints with << and >>. Provide Roman_int with an as_int()
+	member that returns the number as an int value, so that if r is a Roman_int, we can write out 
+	cout << "Roman:" << r << "=" << r.as_int() << '\n'; and have it print "Roman: V = 5" if r is V.
+
+07.	Make a version of the calculator from chapter 7 that accepts Roman numbers rather than the usual Arabic ones.
+
+08.	Write a program that accepts two file names and produces a new file that is the contents of the first file 
+	followed by the contents of the second file. That is, a program that concatenates two files.
+
+09.	Write a program that takes two files containing sorted whitespace separated words and merges them, 
+	preserving them.
+
+10.	Add a command from x to the calculator from Chapter 7 that makes it take input from file x. Add a command "to y"
+	to the calculator that makes it write its output (both standard and error output) to file y. Write a collection
+	of test cases based on ideas from 7.3 and use that to test the calculator. Discuss how you would use these 
+	commands for testing.
+
+11.	Write a program that produces the sum of all the whitespace-separated integers in a text file. For example:
+	bears: 17 elephants 9 end should output 26.

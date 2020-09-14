@@ -39,7 +39,14 @@
 	non-conventional operations to otherwise well understood operators. 
 	
 8.	Why should the public interface to a class be as small as possible?
+	A small public interface keeps the function tidy, easily understood, and easily maintainable. There are only a few
+	ways "in" so to speak and so maintain those ways in and debugging them is more easily done.
 
 9.	What does adding const to a member function do?
+	It forbids the member function from modifying the object on which they are called.
 
 10.	Why are "helper functions" best placed outside of the class definition?
+	Helper functions being outside of the class definition protects the class object, makes
+	navigating the member functions easier, and keeps debugging easier by keeping the "likely suspects" list for a 
+	bug small.
+	

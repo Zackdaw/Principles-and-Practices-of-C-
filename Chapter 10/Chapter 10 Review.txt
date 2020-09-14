@@ -1,0 +1,34 @@
+01.	When dealing with input and output, how is the variety of the devices dealt with in modern computers?
+
+02.	What, fundamentally, does an istream do?
+
+03.	What, fundamentally, does an ostream do?
+
+04.	What, fundamentally, is a file?
+
+05.	What is a file format?
+
+06.	Name four different types of devices that can require I/O for a program.
+
+07.	What are the four steps for reading a file?
+
+08.	What are the four steps for writing a file?
+
+09.	Name and define the four stream states.
+
+10.	Discuss how the following input problems can be resolved:
+	A.	The user typing an out of range value.
+
+	B.	Getting no value (EoF)
+
+	C.	The user typing something of the wrong type.
+
+11.	In what way is the input usually harder than the output?
+
+12.	In what way is the output usually harder than the input?
+
+13.	Why do we often want to separate the input and output from computation?
+
+14.	What are the two most common uses of the istream member function clear()?
+
+15.	What are the usual function declarations for << and >> for a user defined type-X?

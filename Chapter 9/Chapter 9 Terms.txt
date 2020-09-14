@@ -6,11 +6,15 @@ class
 A user-defined type that specifies how an object is to be represented, constructed, interfaced with, and deconstructed.
 
 const
+A keyword that modifiers a function as a non-modifying function, or a variable as an unchanging variable, or an argument
+as an unmodifiable argument.
 
 Constructor
 A member function with the same name as the class that is called upon creating an object that requires designated parameters.
 
 Destructor
+The opposite of a constructor, a Destructor determines how an object is to be deleted. This is covered in much greater
+depths later.
 
 enum
 A simple user-defined type that specifies values for a series of symbolic constants.
@@ -24,6 +28,8 @@ Enumerator
 The values in an enum body.
 
 Helper Function
+A somewhat esoteric term coined by Bjarne to mean functions that take a class they help as an argument but are not 
+member functions.
 
 Implementation
 The code of a class that is required for the class to successfully run but not essential to interacting with the class.
@@ -32,6 +38,10 @@ In-Class Initializer
 When a class 
 
 Inlining
+When a function's code is copied at the point of a call rather than the standard form of a function being called, the 
+arguments transferred, control passed to the function, CPU execution, then returning the function value to a specified
+spot, followed by control being return to the caller. Useful for small, fast, efficient functions where the calling overhead
+will take more time than the function itself. 
 
 Interface
 Code for a class that is visible to public and determines how a class may be called by the rest of the program.

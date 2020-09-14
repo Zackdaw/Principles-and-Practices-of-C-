@@ -1,0 +1,49 @@
+<<<Vocabulary>>>
+
+Device Driver
+
+File
+
+Input Device
+
+Input Operator
+
+Output Device
+
+Output Operator
+
+Stream State
+
+Structured File
+
+Terminator
+
+<<<Classes and Functions>>>
+
+bad()
+
+buffer
+
+clear()
+
+close()
+
+eof()
+
+fail()
+
+good()
+
+ifstream
+
+iostream
+
+istream
+
+ofstream
+
+open()
+
+ostream
+
+unget()

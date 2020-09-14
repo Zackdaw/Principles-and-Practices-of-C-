@@ -1,0 +1,19 @@
+01.	Start a program to work with points, discussed in 10.4. Begin by defining the data type Point that has two 
+	coordinate members (x, y).
+
+02.	Using the code and discussion in 10.4, prompt the user to input seven (x,y) pairs. As the data is entered,
+	store it in a vector of Point(s) called original_points.
+
+03.	Print the data in original_points to see what it looks like.
+
+04.	Open an ofstream and output each point to a file named mydata.txt. On Windows, we suggest appending the 
+	.txt suffix to the file to make it readable by NotePad.
+
+05.	Close the ofstream and then open an ifstream for mydata.txt. Read the data from mydata.txt and store it 
+	in a new vector called processed_points.
+
+06.	Print the data elements from both vectors.
+
+07.	Compare the two vectors and print "Something Went Wrong!" if the number of elements or values are 
+	incongruent.
+
