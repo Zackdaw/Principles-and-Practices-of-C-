@@ -1,27 +1,62 @@
 01.	When dealing with input and output, how is the variety of the devices dealt with in modern computers?
+	In most cases, the variety of I/O devices is dealt with through the device driver that is accessed through
+	the operating system. This device driver allows the OS to provide a standardized interface / library for the device
+	and eliminates the need to tailor the program to the individual I/O devices in most cases.
 
 02.	What, fundamentally, does an istream do?
+	An istream fundamentally takes character sequences from the buffer, which in turn takes input from a defined 
+	source, and turns them into various appropriate types.
 
 03.	What, fundamentally, does an ostream do?
+	An ostream fundamentally takes the values of types and turns them into character sequences in the buffer, which
+	are sent to a defined destination.
 
 04.	What, fundamentally, is a file?
+	A file, at its most basic level, is a binary sequence that starts at 0 and proceeds to an end marker.
 
 05.	What is a file format?
+	The rules which govern how a file's bytes are interpreted.
 
 06.	Name four different types of devices that can require I/O for a program.
+	1) A display, such as a monitor.
+	2) A keyboard.
+	3) A mouse.
+	4) Audio devices.
 
 07.	What are the four steps for reading a file?
+	1)	Know its name.
+	2)	Open the file.
+	3)	Read in the contents.
+	4)	Close the file.
 
 08.	What are the four steps for writing a file?
+	1)	Name the file.
+	2)	Open the file or create it if it does not exist.
+	3)	Write out our objects.
+	4)	Close the file.
 
 09.	Name and define the four stream states.
+	The four stream states are as follows:
+		1)	good()	:	Operations have succeeded.
+		2)	eof()	:	The end of the file was reached.
+		3)	fail()	:	Something unexpected happened, such as type incongruence.
+		4)	bad()	:	Fatal error encountered, such as a disk read error or file corruption.
 
 10.	Discuss how the following input problems can be resolved:
 	A.	The user typing an out of range value.
+		Handle the issue in the code by checking for out of range values and correcting the issue.
 
 	B.	Getting no value (EoF)
+		Throw an exception, this problem is likely bigger than the program and will need to be fixed at a higher level.
 
 	C.	The user typing something of the wrong type.
+		Ignore it if the program is simple and used just by you. Handle it similarly to A if it will be used for a 
+		longer duration or by multiple people.
+
+	The choice between A and B is a larger software architecture issue. If you reach the end of a file without a usable
+	value, do you want to prompt the user for input? If you are already prompting for input, it is unlikely that a user
+	accidentally sent an EOF command. In that case it can be reasonably assumed that the user did so on purpose, and an 
+	exception is the most efficient way of terminating the program and notifying the user that it did not execute.
 
 11.	In what way is the input usually harder than the output?
 

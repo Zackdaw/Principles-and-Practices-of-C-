@@ -1,49 +1,80 @@
 <<<Vocabulary>>>
 
 Device Driver
+A device driver is software that provides the details for handling an individual input or output device and allows
+the operating system to provide a decently uniform and standardized interface for communicating with the device.
 
 File
+A sequence of binary that is indexed starting at 0 and proceeds until an End-Of-File marker is reached. Files are 
+interpreted according to their format, which is the fules governing how the file's binary is interpreted.
 
 Input Device
+A device which generates characters for a buffer in an input stream. An input device can be anything ranging from a 
+keyboard to a strain sensor to a file.
 
 Input Operator
+The operator >> puts characters into a the left operand's type from the buffer.
 
 Output Device
+A device that reacts to characters read from the buffer after being put there by an output stream. An output device can
+be anything ranging from a monitor to speakers to a robotic arm.
 
 Output Operator
+The operator << takes a type and generates output characters into a designated buffer for an output stream.
 
 Stream State
+The current status of a an I/O stream based on its error flags. There are four states, Good, EOF, Fail, and Bad.
 
 Structured File
+A file with a set pattern of organization that allows it to be read according to self-identifying components in the file.
 
 Terminator
+A character that signals to the program to stop reading a sequence.
 
 <<<Classes and Functions>>>
 
 bad()
+A stream state function that returns true if the stream encounters a fatal error, such as a disk-read error or a loss
+of connectivity.
 
 buffer
+A block of temporary memory that holds values in between the I/O interface of the OS and the program, allowing for "chunks" 
+of data to be communicated efficiently rather than piecemeal on-the-fly R/W, which is not only poorly performant but can 
+be prone to critical and difficult to trace errors.
 
 clear()
+A stream-related function that resets a stream's flag bits. If an argument is given, it will reset all flags not mentioned
+while setting the flag in the argument to the specified value.
 
 close()
+A function that will explicitly close a file. Often used when idiomatic scope closure is not desirable or usable.
 
 eof()
+A function that returns a bool based on the EOF bitflag. Returns true if the bit is set.
 
 fail()
+A somewhat nebulous bool function that will return true if a stream reports a non-fatal error, such as incongruent types.
 
 good()
+A stream state function that will return true if the stream is being read wihout issue.
 
 ifstream
+An input stream for reading a file.
 
 iostream
+An input-output stream that can be used for both input and output.
 
 istream
+An input stream from turning character sequences into types.
 
 ofstream
+An output stream that can be used for writing to a file.
 
 open()
+A function that will explicitly open a file. Often used when idiomatic scope closure is not desirable or usable.
 
 ostream
+An output stream that turns types into character sequences.
 
 unget()
+A function that puts the last read character back into the buffer, effectively backing up the read sequence by 1.
