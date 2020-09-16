@@ -59,11 +59,29 @@
 	exception is the most efficient way of terminating the program and notifying the user that it did not execute.
 
 11.	In what way is the input usually harder than the output?
+	Input is usually harder than output in regards to error checking. It can be argued that input is mostly error checking
+	to make sure that the provided input is what we anticipate.
 
 12.	In what way is the output usually harder than the input?
+	Output is harder for a similar but distinctly different reason than its opposite. It can be hard to agree upon the 
+	needed and accepted format of outputted data, and therefore it can be difficult to establish 1:1 communication
+	between outputs where the data looks and is similar and translatable.
 
 13.	Why do we often want to separate the input and output from computation?
+	Separating the I/O from the computation allows you to modularize the computation and not have to repeatedly code it
+	for every potential message in or out, i.e. different languages or different units. Furthermore, it is good practice
+	for utility and library functions to not interact with the user - this keeps things tidy and doesn't implicate the
+	user's interface with the computation.
 
 14.	What are the two most common uses of the istream member function clear()?
+	The two most common uses are without an argument, which resets the istream's flags. The second most common usage is 
+	to provide an argument with a flag to reset all flags and to set the specific flag to its value. This is most commonly
+	used to reset a bad() flag to a fail() flag, or to set a fail flag upon reaching a terminator.
 
 15.	What are the usual function declarations for << and >> for a user defined type-X?
+	For <<, it defines the input and error checks the input to make sure the that provided operand can be successfully
+	made into the user-defined type. For instance person << entry1 must check for the relevant data fields before 
+	creating the person type. It should throw an exception or raise a warning if the data cannot be successfully read.
+	The >> flag is for output. It should initially be used for debugging and to write out the data of a user defined type
+	so we can see what is going on with the type's fields and to confirm that everything is working correctly. After
+	that, it should be used to provide an output that will provide the user with more data.
