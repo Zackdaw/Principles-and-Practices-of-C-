@@ -227,7 +227,7 @@ inline int randint(int min, int max) {  return uniform_int_distribution<>{min, m
 
 inline int randint(int max) { return randint(0, max); }
 
-//inline double sqrt(int x) { return sqrt(double(x)); }	// to match C++0x
+inline double sqrt(int x) { return sqrt(double(x)); }	// to match C++0x
 
 // container algorithms. See 21.9.
 
