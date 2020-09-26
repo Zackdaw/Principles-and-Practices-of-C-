@@ -1,0 +1,2 @@
+Exercise 4 was solved as a part of Exercise 3. However, rather than saving an additional bit of information, I 
+decided to instead convert everything to Kelvin upon its entry using a constructor.

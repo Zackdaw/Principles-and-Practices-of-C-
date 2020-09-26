@@ -13,6 +13,15 @@
     <Filter Include="Exercises\E2">
       <UniqueIdentifier>{0e8e6233-a4fa-4aba-b65c-eaca73f72066}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\E3">
+      <UniqueIdentifier>{2ef95ef2-b832-437b-af2b-9f24b96578e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E4">
+      <UniqueIdentifier>{f7bf717a-bff6-42aa-a69d-d4babdfea2c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E5">
+      <UniqueIdentifier>{56d102f5-75bd-4015-9683-401f1758dc6e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Chapter 10 Review.txt" />
@@ -22,6 +31,9 @@
     </Text>
     <Text Include="Chapter 10 Exercises.txt">
       <Filter>Exercises</Filter>
+    </Text>
+    <Text Include="See E3.txt">
+      <Filter>Exercises\E4</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +46,12 @@
     <ClInclude Include="E2_Header.h">
       <Filter>Exercises\E2</Filter>
     </ClInclude>
+    <ClInclude Include="E3_Header.h">
+      <Filter>Exercises\E3</Filter>
+    </ClInclude>
+    <ClInclude Include="E5_Header.h">
+      <Filter>Exercises\E5</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C10_Drill_Source.cpp">
@@ -44,6 +62,18 @@
     </ClCompile>
     <ClCompile Include="E2_Source.cpp">
       <Filter>Exercises\E2</Filter>
+    </ClCompile>
+    <ClCompile Include="E3_Source.cpp">
+      <Filter>Exercises\E3</Filter>
+    </ClCompile>
+    <ClCompile Include="E5_Core.cpp">
+      <Filter>Exercises\E5</Filter>
+    </ClCompile>
+    <ClCompile Include="Day.cpp">
+      <Filter>Exercises\E5</Filter>
+    </ClCompile>
+    <ClCompile Include="Month.cpp">
+      <Filter>Exercises\E5</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

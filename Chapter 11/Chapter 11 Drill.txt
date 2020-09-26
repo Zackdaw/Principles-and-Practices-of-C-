@@ -1,0 +1,25 @@
+01. Start a program called Test_Output.cpp. Declare an integer birth_year and assign it the year you were born.
+
+02. Output your birth year in decimal, hex, and octal base.
+
+03. Label each value with the name of the base used.
+
+04. Did you line up our output columns using the tab character? If not, do so.
+
+05. Output your age.
+
+06. Fix your output to decimal if there were any issues.
+
+07. Go back to 2 and cause your output to show the base for each output.
+
+08. Try reading as octal, hex, etc, 
+	cin >> a >> oct >> b >> hex >> c >> d;
+	cout << a << '\t' << << b << '\t' << c << '\t' << d << '\n';
+
+	Run this code with this unput: 1234 1234 1234 1234 and explain the results.
+
+09.	Write some code to print the number 1234567.89 three times, first using default float, then fixed, then scientific.
+	Which output form presents the most accurate output to the user? Explain why.
+
+10.	Make a simple table including your first and last name, telephone number, amd email address for yourself and five
+	friends. Experiment with different field widths until you are satisfied that the table is well presented.

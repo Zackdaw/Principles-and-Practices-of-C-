@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{64774b6d-15ca-4298-8a22-f1b005176d02}</ProjectGuid>
-    <RootNamespace>Chapter10</RootNamespace>
+    <ProjectGuid>{fc5cbb56-3e9f-4a42-85c7-9b1b70a05b8f}</ProjectGuid>
+    <RootNamespace>Chapter11</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,45 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="Chapter 10 Drill.txt">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </Text>
-    <Text Include="Chapter 10 Review.txt" />
-    <Text Include="Chapter 10 Terms.txt" />
-    <Text Include="Chapter 10 Exercises.txt" />
-    <Text Include="See E3.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="C10_Drill_Header.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="E1_Header.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="E2_Header.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="E3_Header.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClInclude>
-    <ClInclude Include="E5_Header.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="C10_Drill_Source.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="Day.cpp" />
-    <ClCompile Include="E1_Source.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="E2_Source.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="E3_Source.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
-    <ClCompile Include="E5_Core.cpp" />
-    <ClCompile Include="Month.cpp" />
+    <Text Include="Chapter 11 Drill.txt" />
+    <Text Include="Chapter 11 Review.txt" />
+    <Text Include="Chapter 11 Terms.txt" />
+    <Text Include="Chapter 11 Exercises.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

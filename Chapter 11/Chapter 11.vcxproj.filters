@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Drill">
+      <UniqueIdentifier>{07392a79-00f6-48d7-9f02-5a7c90014be0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises">
+      <UniqueIdentifier>{1f693786-e39d-4306-87e4-9644e4ce3a3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Chapter 11 Review.txt" />
+    <Text Include="Chapter 11 Terms.txt" />
+    <Text Include="Chapter 11 Exercises.txt">
+      <Filter>Exercises</Filter>
+    </Text>
+    <Text Include="Chapter 11 Drill.txt">
+      <Filter>Drill</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
