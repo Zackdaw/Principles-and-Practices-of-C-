@@ -1,35 +1,73 @@
 01.	Why is I/O tricky for a programmer?
+	I/O is tricking for a programmer for two reasons. For input, it is difficult to predict all the permutations of 
+	input that may be recieved and that makes programming for every case tricky. For output, the trickiness lies in 
+	accurately and intuitively outputting data to the user or to other functions. Thus both input and output are highly
+	tailorable and doing so in a way that best serves the end use of the code is often tricky.
 
 02.	What does the notation << hex do?
+	The <<hex notation informs the ostream to output integers in hexidecimal format.
 
 03.	What are hex numbers used for in computer science? Why?
+	Hex numbers are used because they can output the value of 4 bits of memory in a single character.
 
 04.	Name some of the options you may want to implement for formatting integer output.
+	setprecision or setw are possible options to use, as are hex, oct, etc. These change the way the data is displayed 
+	and allows for a more tailored display of data.
 
 05.	What is a manipulator?
+	A manipulator is a term that changes the behavior of a stream rather than displaying or being input, i.e. hex or oct.
 
 06.	What is the prefix for decimal? For octal? For hex?
+	Hex - 0x
+	Oct - 0
 
 07.	What is the default output format for floating-point values?
+	The default output is decimal that displays the fixed total sum of digits until the number gets very large or small,
+	at which point the default output shifts to scientific notation. For fixed default output, it normally displays six
+	or seven digits before rounding the last according to the 4/5th rule.
 
 08.	What is a field?
+	A field is the space an integer or string value takes up in the output. For instance, the field for the string "Eight"
+	is five chars long.
 
 09.	Explain what setprecision() and setw() do.
+	setprecision() denotes the number of digits displayed by a float for that mode of float, be it default, scientific, 
+	or default.
+	setw() denotes the number of characters that are displayed by the 
 
 10.	What is the purpose of file open modes?
+	File open modes let you control the details of how a file is opened such as its position, if it is to opened as a
+	read or a write, and what to do with data that is already present.
 
 11.	Which of the following manipulators does not "stick": hex, scientific, setprecision(), showbase, setw?
+	Setw does not stick. 
 
 12. What is the difference between character I/O and binary I/O?
+	Character I/O records the data as a character sequence that can be read as such and thus is more readily understanble
+	by humans and can be given readily debugged formats.
+	Binary I/O is purely binary and can potentially be much more efficient, however it comes at a cost that the binary
+	interpreter must be extremely precise, lacks error checking as much as characters, requires reimplementing the << operator,
+	and is very difficult to debug.
 
 13.	Give an example of when it would be beneficial to use a binary I/O file instead if a character I/O file.
+	Binary I/O is most beneficial with files that either require extreme performance, such as embedded software, or 
+	for file types that don't lend to characters, such as pictures or audio files, where the binary and characters are
+	equally intelligable to a human.
 
 14.	Give two examples of where a stringstream can be beneficial.
+	Stringstreams can be advantageous when you want to separate I/O from processing. For instance, you may want to process
+	the inputted characters as a string and parse it based on set rules. Alternatively, you may be constrained by your
+	device to output a string as a stream, such as for GUI purposes.
 
 15.	What is a file position?
+	The location in terms of char from 0 that the reading or writing function is at.
 
 16.	What happens if you position a file position before the end of the file?
+	The result in an undefined behavior that can vary wildly depending on the specific system in use.
 
 17.	When would you prefer line oriented input to type-specific input?
+	Line oriented input is preferrable when you need to use other delineators than a whitespace or when << does not fit
+	your needs for program specific reasons.
 
 18.	What does isalnum(c) do?
+	Returns a bool based on if the character(c) is an alphanumeric character.

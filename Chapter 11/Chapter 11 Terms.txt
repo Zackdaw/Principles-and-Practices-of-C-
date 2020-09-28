@@ -1,0 +1,59 @@
+Binary
+The base-2 number sequences that are the fundamental language of electronics.
+
+Character Classification
+The system by which characters are classified in C-derived languages, such as digits, alphanumerica, letters, etc.
+
+Decimal
+A display mode for floats that displays the float as a decimal-point number with a determined or default precision.
+
+defaultfloat
+The standard mode that a float is displayed to the user, normally 6 or 7 digits in precision if showing in decimal or
+switching to scientific if the compiler determines that gives a more accurate output due to number length.
+
+file positioning
+The point in a file where the reading or writing function is currently indexed to. Starts at 0 and proceeds by character
+length to the end of the file.
+
+fixed
+A display mode for floats where a determined number of digits are shown past the decimal.
+
+hexadecimal
+A base-16 numeric system that can be used to display ints. Handy in computer science due to it's ability to represent
+any 4-bit value as a single character.
+
+irregularity
+The lack of systemic order in an input or output stream that must be accounted for by the programmer.
+
+line-oriented input
+Input that is terminated by a newline character only rather than a newline or a whitespace character.
+
+Manipulator
+A directive that can be used to modify output that will change its display, such as oct, Hex, etc.
+
+Nonstandard operator
+An operator that is not covered by the standard C++ functions.
+
+noshowbase
+A manipulator that instructs the program to not show the base prefix of a number, i.e. 0a or 0.
+
+octal
+A base-8 numeric system that can be used to display ints. It was used commonly in early days of computing to represent
+bit values but has largely fallen in disfavor in lieu of hexadecimal.
+
+output formatting
+The tailoring of output to fit a specific style and pattern that makes the data easier to interpret, either to a
+stream or to a user.
+
+regularity
+Regularity occurs when memory objects can be systemically processed in a uniformed fashion.
+
+scientific
+A display mode for floats that represents the number in scientific notation. Useful for very large and very small numbers.
+
+setprecision()
+A manipulator that allows the programmer to set the number of digits that will be displayed by the program when showing a
+float before rounding according to the 4/5th rule for the last digit.
+
+showbase
+A manipulator that instructs the output to show the base prefix of a series of integers.
