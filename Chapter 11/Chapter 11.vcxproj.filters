@@ -7,6 +7,36 @@
     <Filter Include="Exercises">
       <UniqueIdentifier>{1f693786-e39d-4306-87e4-9644e4ce3a3e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\E1">
+      <UniqueIdentifier>{c4c60d05-53c6-4cde-884b-7e6be00ae7bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E2">
+      <UniqueIdentifier>{5cacdc63-0e6c-4b17-bf0c-99ec204d366a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E3">
+      <UniqueIdentifier>{472d9ce3-2c4e-4abc-b1ba-6590439966c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E4">
+      <UniqueIdentifier>{ab6e72bd-f4cc-4f73-8bbf-bfb2f98ac398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E5">
+      <UniqueIdentifier>{cd0a75ba-6f44-4aeb-8548-f942cfbcfdcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E6">
+      <UniqueIdentifier>{001ec858-bdec-4121-bfa5-10dde1035b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E7">
+      <UniqueIdentifier>{9fdea500-1408-4e5d-9e69-a8c7f46b10e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E8">
+      <UniqueIdentifier>{56d67fd2-af2f-4692-882c-a0294d98976d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E9">
+      <UniqueIdentifier>{d982ecab-0dc2-407e-b998-395d3e3ef2f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E10">
+      <UniqueIdentifier>{d2691d01-0fc6-4019-92d0-de5f19c04200}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Chapter 11 Review.txt" />
@@ -17,5 +47,43 @@
     <Text Include="Chapter 11 Drill.txt">
       <Filter>Drill</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C11_Drill_Source.cpp">
+      <Filter>Drill</Filter>
+    </ClCompile>
+    <ClCompile Include="E1.cpp">
+      <Filter>Exercises\E1</Filter>
+    </ClCompile>
+    <ClCompile Include="E2.cpp">
+      <Filter>Exercises\E2</Filter>
+    </ClCompile>
+    <ClCompile Include="E3.cpp">
+      <Filter>Exercises\E3</Filter>
+    </ClCompile>
+    <ClCompile Include="E4.cpp">
+      <Filter>Exercises\E4</Filter>
+    </ClCompile>
+    <ClCompile Include="E5.cpp">
+      <Filter>Exercises\E5</Filter>
+    </ClCompile>
+    <ClCompile Include="E6.cpp">
+      <Filter>Exercises\E6</Filter>
+    </ClCompile>
+    <ClCompile Include="E7.cpp">
+      <Filter>Exercises\E7</Filter>
+    </ClCompile>
+    <ClCompile Include="E8.cpp">
+      <Filter>Exercises\E8</Filter>
+    </ClCompile>
+    <ClCompile Include="E9.cpp">
+      <Filter>Exercises\E9</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C11_Drill_Header.h">
+      <Filter>Drill</Filter>
+    </ClInclude>
+    <ClInclude Include="E7.h" />
   </ItemGroup>
 </Project>
