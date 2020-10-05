@@ -37,13 +37,28 @@
     <Filter Include="Exercises\E10">
       <UniqueIdentifier>{d2691d01-0fc6-4019-92d0-de5f19c04200}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\E11">
+      <UniqueIdentifier>{e3463aaa-031f-4d32-826c-aaa285a49850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E12">
+      <UniqueIdentifier>{d43cfee9-1dbc-47c8-9803-f3e0dd1c6709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E13">
+      <UniqueIdentifier>{65c71257-0f02-45c7-8bc7-0cef5fcd0466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E14">
+      <UniqueIdentifier>{4427ba1c-4640-4323-94b1-de85ed4a8443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E15">
+      <UniqueIdentifier>{f1457320-9c4c-4d7d-8d66-631cab4d8f68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E16">
+      <UniqueIdentifier>{2e22f83d-7e36-4a3d-b314-9b6e621c4500}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Chapter 11 Review.txt" />
     <Text Include="Chapter 11 Terms.txt" />
-    <Text Include="Chapter 11 Exercises.txt">
-      <Filter>Exercises</Filter>
-    </Text>
     <Text Include="Chapter 11 Drill.txt">
       <Filter>Drill</Filter>
     </Text>
@@ -81,6 +96,24 @@
     </ClCompile>
     <ClCompile Include="E10.cpp">
       <Filter>Exercises\E10</Filter>
+    </ClCompile>
+    <ClCompile Include="E11.cpp">
+      <Filter>Exercises\E11</Filter>
+    </ClCompile>
+    <ClCompile Include="E12.cpp">
+      <Filter>Exercises\E12</Filter>
+    </ClCompile>
+    <ClCompile Include="E13.cpp">
+      <Filter>Exercises\E13</Filter>
+    </ClCompile>
+    <ClCompile Include="E14.cpp">
+      <Filter>Exercises\E14</Filter>
+    </ClCompile>
+    <ClCompile Include="E15.cpp">
+      <Filter>Exercises\E15</Filter>
+    </ClCompile>
+    <ClCompile Include="E16.cpp">
+      <Filter>Exercises\E16</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
