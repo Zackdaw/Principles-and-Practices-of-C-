@@ -79,6 +79,9 @@
     <ClCompile Include="E9.cpp">
       <Filter>Exercises\E9</Filter>
     </ClCompile>
+    <ClCompile Include="E10.cpp">
+      <Filter>Exercises\E10</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C11_Drill_Header.h">
