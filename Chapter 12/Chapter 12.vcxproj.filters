@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Drill">
+      <UniqueIdentifier>{d4cd8cae-79c1-4719-bedd-cf45c19992dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises">
+      <UniqueIdentifier>{6333c955-4c16-4764-9e27-9fce66cbd643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E1">
+      <UniqueIdentifier>{9192c7f8-a796-44be-a069-d2985ebfb05c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E2">
+      <UniqueIdentifier>{fbc2b1d4-1f56-4eaf-a9b9-f6c35c5abc17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E3">
+      <UniqueIdentifier>{95cdeda7-c316-44b9-a819-06d935a69631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E4">
+      <UniqueIdentifier>{4ea1243b-7341-4e8a-a3b0-92667e781486}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E5">
+      <UniqueIdentifier>{2f0ca28d-e108-4522-a759-a42a4873d983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E6">
+      <UniqueIdentifier>{915d80c0-2b0b-4e18-a6df-4db0e167ef63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E7">
+      <UniqueIdentifier>{3645a31d-d622-4529-8200-54a2bd00043b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E8">
+      <UniqueIdentifier>{8a411671-3f6e-47d2-86be-10d158b781a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E9">
+      <UniqueIdentifier>{5fd31582-37d4-4e6e-9ffb-8fb47fc80439}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E10">
+      <UniqueIdentifier>{9082400d-14d1-477a-81d0-219b8e66d0d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E11">
+      <UniqueIdentifier>{89f8d286-eb50-44a3-8cb5-d796e421e4e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E12">
+      <UniqueIdentifier>{44b670b7-2f4b-4b56-9d86-b805d51a600a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\E13">
+      <UniqueIdentifier>{86162d21-7632-4206-9967-8b5ef95b9d33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GUI.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Simple_window.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C12_Drill.cpp">
+      <Filter>Drill</Filter>
+    </ClCompile>
+    <ClCompile Include="E1.cpp">
+      <Filter>Exercises\E1</Filter>
+    </ClCompile>
+    <ClCompile Include="E2.cpp">
+      <Filter>Exercises\E2</Filter>
+    </ClCompile>
+    <ClCompile Include="E3.cpp">
+      <Filter>Exercises\E3</Filter>
+    </ClCompile>
+    <ClCompile Include="E4.cpp">
+      <Filter>Exercises\E4</Filter>
+    </ClCompile>
+    <ClCompile Include="E5.cpp">
+      <Filter>Exercises\E5</Filter>
+    </ClCompile>
+    <ClCompile Include="E6.cpp">
+      <Filter>Exercises\E6</Filter>
+    </ClCompile>
+    <ClCompile Include="E7.cpp">
+      <Filter>Exercises\E7</Filter>
+    </ClCompile>
+    <ClCompile Include="E8.cpp">
+      <Filter>Exercises\E8</Filter>
+    </ClCompile>
+    <ClCompile Include="E9.cpp">
+      <Filter>Exercises\E9</Filter>
+    </ClCompile>
+    <ClCompile Include="E10.cpp">
+      <Filter>Exercises\E10</Filter>
+    </ClCompile>
+    <ClCompile Include="E11.cpp">
+      <Filter>Exercises\E11</Filter>
+    </ClCompile>
+    <ClCompile Include="E12.cpp">
+      <Filter>Exercises\E12</Filter>
+    </ClCompile>
+    <ClCompile Include="E13.cpp">
+      <Filter>Exercises\E13</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fltk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gui.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixIO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MatrixIO11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Simple_window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="std_lib_facilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
