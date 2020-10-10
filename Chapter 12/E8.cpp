@@ -1,36 +1,38 @@
-#include "Simple_window.h"
 #include "Graph.h"
-using namespace Graph_lib;
+#include "Simple_window.h"
 
-int main()
+int main(int argc, char** argv)
 {
-	try
+	try 
 	{
-		Point tl(100, 100);
-		Simple_window win(tl, 600, 400, "Canvas");
+		Simple_window window{ Point{50, 50}, 700, 700, "Exercise 08" };
 
-		Circle c0(Point(150, 200), 50);
-		c0.set_color(Color::blue);
-		Circle c1(Point(230, 200), 50);
-		c1.set_color(Color::black);
-		Circle c2(Point(310, 200), 50);
-		c2.set_color(Color::red);
-		Circle c3(Point(190, 280), 50);
-		c3.set_color(Color::green);
-		Circle c4(Point(270, 280), 50);
-		c4.set_color(Color::yellow);
+		Circle ring_0{ Point{100, 100}, 50};
+		ring_0.set_color(Color::blue);
+		window.attach(ring_0);		
+		
+		Circle ring_1{ Point{155, 160}, 50 };
+		ring_1.set_color(Color::yellow);
+		window.attach(ring_1);
 
-		win.attach(c0);
-		win.attach(c1);
-		win.attach(c2);
-		win.attach(c3);
-		win.attach(c4);
+		Circle ring_2{ Point{210, 100}, 50};
+		ring_2.set_color(Color::black);
+		window.attach(ring_2);
 
-		win.wait_for_button();
+		Circle ring_3{ Point{265, 160}, 50 };
+		ring_3.set_color(Color::green);
+		window.attach(ring_3);
+
+		Circle ring_4{ Point{320, 100}, 50};
+		ring_4.set_color(Color::red);
+		window.attach(ring_4);
+
+		window.wait_for_button();
+
+		return 0;
 	}
-	catch (exception& e) {
-		cout << e.what() << endl;
-		return 1;
-	}
+	catch (...)
+	{
 
+	}
 }
