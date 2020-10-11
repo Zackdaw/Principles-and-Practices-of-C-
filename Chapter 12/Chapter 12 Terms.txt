@@ -1,0 +1,48 @@
+Color
+A pixel shade produced by a three integer red-blue-green value.
+
+Coordinates
+A two number pair that represents a location on a 2D plane.
+
+Display
+Any device that outputs graphically represented information from a program.
+
+Fill Color
+The color used to "fill" a shape area, normally the x-y area of the shape, occasionally minus
+a one pixel wide border.
+
+FLTK
+Fast, Light Toolkit. An open sourced graphics library used for creating basic UI and graphics in C++
+
+Graphics
+Visual representations of data and programs.
+
+GUI
+Graphics user interface.
+
+GUI Library
+A C++ library that contains prepackaged code for drawing, displaying, and creating GUIs.
+
+HTML
+A markup language often used by graphical representations that allows for elaborate and comprehensive formatting
+of visual text.
+
+Image
+A digital picture or drawing.
+
+JPEG
+A common color image format.
+
+Line Style
+The visual style of a drawn line, i.e. a thick line, a dotted line, etc.
+
+Software layer
+An architecture concept where functionality is compartmentalized to its designated layer and not necessarily needing to know the
+implementation details of the lower layers and instead uses interfaces to use those functionalities. For instance, a software layer
+is above the hardware layer, which is interacted with primarily through the operating system and hardware specific drivers.
+
+Window
+An area of the screen managed by the OS that is dedicated to a program that displays its graphical programming.
+
+XML
+A human-readable markup language used in a large number of applications ranging from data storage to display formatting.

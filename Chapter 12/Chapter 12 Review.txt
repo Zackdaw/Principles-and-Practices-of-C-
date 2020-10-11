@@ -1,0 +1,63 @@
+01.	Why do we use graphics?
+	We use graphics to make our display of data and use of the program more interesting, intuitive, 
+	and accessible to people.
+
+02.	When do we try to not use graphics?
+	We do not use graphics when it is an embedded or purely computational, where the display of the graphics 
+	will not matter because there is no dedicated display device.
+
+03.	Why is graphics interesting as a programmer?
+	Graphics are interesting because they provide immediate and visual results from the code changes, and often
+	provide both novel and educational code to read. Furthermore graphics often represent the proof that the 
+	program is actually useful, i.e. if the UI cannot be made useful, the program is wholly suspect as a 
+	program that is useful to the users.
+
+04.	What is a window?
+	A window is an area of the screen occupied by the program where the graphics of the program are displayed.
+
+05.	In which namespace do we keep our graphics interface classes (for our graphics library)? 
+	Graph_lib.
+
+06.	What header files do you need to do basic graphics using our graphics library?
+	Graph.h and simple_window.h.
+
+07.	What is the simpliest window to use?
+	The simpliest window is a basic window with no buttons or additional features.
+
+08.	What is the minimal window?
+	The minimal window is the button that minimizes the window to the start menu in Windows. Alternatively it may
+	refer to the window's minimum coordinates, (0, 0), or the top left.
+
+09.	What is a window label?
+	A window label is the text at the top right of the window.
+
+10.	How do you label a window?
+	A window may be labelled in the constructor by providing a string, or by accessing the .label property.
+
+11.	How do screen coordinates work? Window coordinates? Mathematical Coordinates?
+	Screen coordinates work by going from 0, 0 at the top left to the max x, y at the bottom right. Window coordinates work
+	the same way, only they use the top left of the window as 0, 0. Mathematical coordinates place 0, 0, at the -bottom- left,
+	therefore they reverse the direction of the Y-Axis.
+
+12.	What are the examples of the simple shapes we can display?
+	For FLTK, your basic shapes are boxes(rectangles), and then drawing images that can be circles, lines, or polygons.
+
+13.	What command attaches a shape to a window?
+	<window>.attach(shape);
+
+14.	What basic shape would you use to draw a hexagon?
+	Polygon or closed polyline.
+
+15.	How do you write text somewhere in the window?
+	You use a Text object, which is a derivative of shape and will display text.
+
+16.	How would you put a photo of your best friend in the window? 
+	You would use the Image class to load the image and attach it to the window at a specified location.
+
+17.	YOu made a window object, but nothing appears on the screen, what are some possible reasons for that?
+	The most likely reason is that you never actually draw the window by either by not ever calling the draw function(show()) or
+	by providing a base coordinate on the screen that does not exist on the screen.
+
+18.	You have made a shape, but it doesn't appear on the window. What are some possible reasons for that?
+	The foremost reason is that you are not actually drawing the shape on the window by not attaching it to the window. Alternatively,
+	you may have given a coordinate off the visible area.
