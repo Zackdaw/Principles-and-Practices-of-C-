@@ -1,0 +1,59 @@
+Closed Shape
+A shape comprised of contiguous, non-intersecting edges.
+
+Color
+A class that is used to represent color, which it uses an enum of color names to represent their RGB values.
+
+Ellipse
+A class used to represent a circular shape with a major and a minor axis.
+
+Fill
+The color which fills the interior of a shape.
+
+Font
+The style of displayed characters.
+
+Font Size
+The size of displayed characters.
+
+GIF
+An image and animated image format.
+
+Image
+A class used to load and display images to a window.
+
+Image Encoding
+The format of an image, i.e. how its data is stored.
+
+Invisible
+An enum identifier in Color that represents visibility property and sets its translucency to 0.
+
+JPEG
+A popular image format.
+
+Line
+A class used to draw a line comprised of two points.
+
+Line Style
+The property representing the graphical style of a line, such as dotted, dashed, etc.
+
+Open Shape
+A shape comprised of non-contiguous or intersecting edges.
+
+Point
+A simple class that represents a location on the (x,y) axis.
+
+Polygon
+A shape comprised of n-number contiguous, non-intersecting edges. The class for polygon is unique compared to a closed polyline in that is checks for intersections.
+
+Polyline
+A parent class of the open and closed polyline that allows for the showing of shapes comprised of multiple lines.
+
+Unnamed Object
+An object created in the memory but not given an identifier.
+
+Vector_ref
+A vector class capable of storing many different object references and returning them, useful for graphic situations where many different object types may be used and naming them is not practical.
+
+Visible
+An enum identifier in Color that represents visibility property and sets its translucency to 255.

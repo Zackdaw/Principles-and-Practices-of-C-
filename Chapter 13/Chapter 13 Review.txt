@@ -1,0 +1,81 @@
+01.	Why don't we just use a commercial or open source graphics library directly?
+	Commercially available graphics libraries are large, complex, and comprehensive tools that would make learning graphics at a fundamental
+	level more challenging than by using a simple, light-weight library.
+
+02.	About how many classes from our graphics interface library do you need to do simple graphics output?
+	Three at minimum, the Simple_window, Point, and line.
+
+03.	What are the header files needed to use the graphics interface library?
+	Graph.h, Simple_window.h, and Point.h at minimum, however graph contains point so really just Graph.h and Simple_window.h.
+
+04.	What classes define closed shapes?
+	Closed_Polyline, Rectangle, Circle, Ellipse, and Polygon. 
+
+05.	Why don't we just use line for every shape?
+	While possible, using line for every shape is needlessly complicated and redundant for common shapes. A child class of shape 
+	that handles the specific geometry math is a more modular and efficient solution.
+
+06.	What do the arguments to Point indicate?
+	Point's two arguments are its X and Y coordinates. 
+
+07.	What are the components of Line_Style?
+	Line style's main component is the enum that masks Fl_line_style and provides various graphical styles for lines, as well as an int that determines the line thickness in pixels.
+
+08.	What are the components of Color?
+	Color components are based in the color designation enum that masks Fl_color and a simple transparency int that ranges from 0-255. 
+	Additional constructors allow for an int-based color determination from a single number, i.e. 99, or by specifying an RGB value.
+
+09.	What is RGB?
+	Red-Green-Blue, a common three-int specifier for a color.
+
+10.	What are the differences between two line(s) and a single Lines containing two lines?
+	The difference is entirely in our perception of what is going on. Lines expresses that the programmer
+	believes that the lines belong together and should be manipulated in tandem while two lines are independent
+	lines.
+
+11.	What properties can you set for every shape?
+	All shapes have a list of points that can be accessed by the add() property.
+
+12.	How many sides does a Closed_polyline defined by five points have?
+	Five if the points do not provoke intersecting lines. If they do, the number may be extremely high.
+
+13.	What do yo see if you define a shape but don't attach it to a window?
+	Nothing.
+
+14	How does a Rectangle differ from a polygon with four Points(corners)?
+	A rectangle differs from a polygon with four points by having a more efficient algorithm for fill colors and outline colors since it is significantly easier to determine what needs to be filled
+	in a rectangle than in a polygon. It also allows for simpler and easier to use constructors like the point followed by width and height or just two points.
+
+15.	How does a polygon differ from a closed_polyline?
+	A polygon does not allow for points to create intersecting lines and checks for this.
+
+16.	What's on top: fill or outline?
+	Outline is on top by default.
+
+17.	Why didn't we bother defining a triangle class?
+	Polygon must be fully initalized with a minimum of three points, meaning that there is no functional difference between a polygon with three points and a triangle class. Furthermore there
+	are no significant algorithmic gains to be made in having it be a separate class, unlike rect, since all polygon fill calculations are ultimately triangulations.
+
+18.	How do you move a shape to another place in the window?
+	They can be moved by accessing the .move(x, y) function.
+
+19.	How do you label a shape with a line of text?
+	Create a text object with the desired label and position it as desired, with the bottom left of the text being considered 0,0.
+
+20. What properties can you set for a text string in a Text?
+	Color, font, and font size.
+
+21.	What is a font and why do we care?
+	Font is the style of characters used to represent the string and is critical for both having a unified style, portability, and readability.
+
+22.	What is Vector_ref and how do we use it?
+	A vector ref is a vector which can take a variety of unspecified items and store them, or rather it stores a reference to them.
+
+23.	What is the difference between a Circle and an Ellipse?
+	An ellipse is simply a circle with a major and a minor axis that are not identical.
+
+24.	What happens if you try and display an Image given a file name that doesn't refer to a file containing an image?
+	The program will normally display a standard "Bad Image" file, i.e. a red or a black X.
+
+25.	How do you display part of an image?
+	Partial images can be displayed using a mask, which requires a point and height and width to show.
